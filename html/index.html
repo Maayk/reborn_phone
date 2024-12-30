@@ -1,0 +1,2439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reborn Phone</title>
+
+    <!-- CSS File's -->
+    <link rel="stylesheet" href="./css/jquery.gridly.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/tooltip.css">
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/phone.css">
+    <link rel="stylesheet" href="./css/twitter.css">
+    <link rel="stylesheet" href="./css/bank.css">
+    <link rel="stylesheet" href="./css/whatsapp.css">
+    <link rel="stylesheet" href="./css/garage.css">
+    <link rel="stylesheet" href="./css/mail.css">
+    <link rel="stylesheet" href="./css/meos.css">
+    <link rel="stylesheet" href="./css/crypto.css">
+    <link rel="stylesheet" href="./css/racing.css">
+    <link rel="stylesheet" href="./css/houses.css">
+    <link rel="stylesheet" href="./css/lawyers.css">
+    <link rel="stylesheet" href="./css/trabalhar.css">
+    <link rel="stylesheet" href="./css/instagram.css">
+    <link rel="stylesheet" href="./js/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="./js/all.min.css">
+    <link rel="stylesheet" href="./js/balloon.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CDN's -->
+    <script src="./js/materialize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- JQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script> <!-- Color CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap -->
+    
+
+</head>
+
+<body style="background-color: transparent !important" ;>
+    <div class="alertas-ios-local" id="appendaqui"></div>
+    <div class="container">
+        
+
+        <img src="./img/rebornphone.png" class="phone-frame">
+
+        <div class="phone-container phone-background" id="phone-container">
+            <!-- <div class="toast phone-alerta">
+                <div class="alert-bar">
+                    <span class="alerta-icone"><i class="material-icons">bluetooth</i></span>
+                    <span class="alerta-titulo">Este é um titulo</span>
+                </div>
+                <span class="alerta-mensagem">opa rapaziada beleza qual a boa, vamo testar pra ver se ta funcionando isso aqui mermao</span>
+            </div> -->
+            <!-- Phone Header -->
+            <div class="lugar-da-notificacao">
+                <!-- <div class="notificacao-celular">
+                    <div class="notificacao-header">
+                        <div class="icone-notificacao"></div>
+                        <div class="titulo-notificacao">Celular</div>
+                    </div>
+                    <div class="notificacao-mensagem-area">
+                        <div class="titulo-mensagem-lock">Oops</div>
+                        <div class="mensagem-lock-full">Algo deu errado, voce ja tem este contato</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="phone-lockscreem">
+                <div class="lockscream-container">
+                    <div class="unlock-area">
+                        <a class="waves-effect waves-light unlockbutton" onclick="UnlockTela()">
+                            <ion-icon name="lock-closed"></ion-icon>    
+                        </a>
+                    </div>
+                    <div class="lockscream-time">10:00</div>
+                    <div class="lockscream-mes">Setembro, dia 12</div>
+                    <div class="lockscream-tempo">
+                        <!-- <div class="lockscream-good">Bom Dia</div> -->
+                        <!-- <div class="lockscream-msgtempo"></div> -->
+                        <div class="lockscream-iconetempo">
+                            <i class="icone-tempo fas fa-cloud-sun"></i>
+                            <p class="lockscream-temperatura">32c</p>
+                        </div>
+                    </div>
+                    <div class="lock-notification-area">
+                        <!-- <div class="notify-item-lock">
+                            <div class="notificacao-header">
+                                <span class="icone-notificacao"></span>
+                                <span class="titulo-notificacao">Contatos</span>
+                                <span class="time-notificacao">1m atrás</span>
+                            </div>
+                            <div class="notificacao-mensagem-area">
+                                <div class="titulo-mensagem-lock">Sugestão de Contato</div>
+                                <div class="mensagem-lock-full">Você recebeu uma sugestão de contato de Demoninho</div>
+                            </div>
+                        </div>
+                        <div class="notify-item-lock">
+                            <div class="notificacao-header">
+                                <span class="icone-notificacao"></span>
+                                <span class="titulo-notificacao">Contatos</span>
+                                <span class="time-notificacao">1m atrás</span>
+                            </div>
+                            <div class="notificacao-mensagem-area">
+                                <div class="titulo-mensagem-lock">Sugestão de Contato</div>
+                                <div class="mensagem-lock-full">Você recebeu uma sugestão de contato de Demoninho</div>
+                            </div>
+                        </div> -->
+        
+         
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="phone-header">
+                <div id="phone-time">00:00</div>
+                <div id="phone-icons">
+                    <i class="fas fa-signal" id="phone-signal"></i>
+                    <i class="fas fa-wifi" id="phone-signal"></i>
+                    <i class="fas fa-battery-three-quarters" id="phone-battery"></i>
+                </div>
+            </div>
+
+            <!-- Phone Notification -->
+            <div class="phone-notification-container">
+                <div class="notification-icon"></div>
+                <div class="notification-title"></div>
+                <div class="notification-text"></div>
+            </div>
+            <div class="paginacao-ios">
+                <p class="paginacaoios-true"></p>
+                <p class="paginacaoios-false"></p>
+            </div>
+
+
+            <!-- Home Applications -->
+
+            <div class="phone-applications" id="phone-applications">
+                <div class="phone-footer-applications">
+                    <div class="phone-application home-apps waves-effect waves-light" data-appslot="1">
+                        <span class="app-unread-alerts">1</span>
+                    </div>
+                    <div class="phone-application home-apps waves-effect waves-light" data-appslot="2"></div>
+                    <div class="phone-application home-apps waves-effect waves-light" data-appslot="3"></div>
+                    <div class="phone-application home-apps waves-effect waves-light" data-appslot="4"></div>
+                </div>
+
+                <div class="phone-home-applications" id="phone-home-applications">
+                    <div class="phone-application waves-effect waves-dark" id="aplicativos-gerais" data-appslot="5">
+                        <span class="phone-app-nome">Mail</span>
+                    </div>
+                    <div class="phone-application waves-effect waves-dark" id="aplicativos-gerais" data-appslot="6">
+                        <span class="phone-app-nome">Rebay</span>
+                    </div>
+                    <div class="phone-application waves-effect waves-dark" id="aplicativos-gerais" data-appslot="7">
+                        <span class="phone-app-nome">Banco</span>
+                    </div>
+                    <div class="phone-application waves-effect waves-dark" id="aplicativos-gerais" data-appslot="8">
+                        <span class="phone-app-nome">Carros</span>
+                    </div>
+
+                    <div class="phone-application waves-effect waves-dark" id="aplicativos-gerais" data-appslot="9">
+                        <span class="phone-app-nome">Camera</span>
+                    </div>
+                    <div class="phone-application waves-effect waves-dark" id="aplicativos-gerais" data-appslot="10">
+                        <span class="phone-app-nome">Instagram</span>
+                    </div>
+                    <div class="phone-application waves-effect waves-dark" id="aplicativos-gerais" data-appslot="11">
+                        <span class="phone-app-nome">Policia</span>
+                    </div>
+                    <!-- <div class="phone-application waves-effect waves-dark" id="aplicativos-gerais" data-appslot="11">
+                    </div>
+                    <div class="phone-application waves-effect waves-dark" id="aplicativos-gerais" data-appslot="12">
+                    </div>
+                    <div class="phone-application waves-effect waves-dark" id="aplicativos-gerais" data-appslot="13">
+                    </div> -->
+                    <!-- <div class="phone-application waves-effect waves-light" id="aplicativos-gerais" data-appslot="13"></div>
+                        <div class="phone-application waves-effect waves-light" id="aplicativos-gerais" data-appslot="14"></div>
+                        <div class="phone-application waves-effect waves-light" id="aplicativos-gerais" data-appslot="15"></div>
+                        <div class="phone-application waves-effect waves-light" id="aplicativos-gerais" data-appslot="16"></div> -->
+                </div>
+            </div>
+
+      
+            <!-- Unread Alerts -->
+            <!-- <div class="app-unread-alerts">1</div> -->
+
+            <!-- Container for all application's -->
+            <div class="phone-application-container">
+                <div id="toast-container" > 
+          
+
+                </div>
+                <div class="settings-app">
+                    <div class="settings-app-header">
+                        <span class="ajustes-titulo">Ajustes</span>
+                        <input type="text" id="ajuestes-pesquisar-input" placeholder="Buscar" spellcheck="false">
+                    </div>
+
+                    <div class="reborn-id-phonearea waves-effect waves-dark">
+                        <div class="profile-phone ">
+                            <div class="profile-phone-foto waves-effect waves-light"></div>
+                            <div class="profile-phone-nome"></div>
+                            <div class="profile-phone-contas">
+                                <p>ID Reborn e Reborn Store</p>
+                            </div>
+                            <div class="profile-phone-setinha">
+                                <p><i class="material-icons dp48 profile-seta-custom">chevron_right</i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reborn-phone-container">
+                        <div class="ajustes-item waves-effect waves-dark" data-settingstab="numberrecognition">
+                            <div class="anonimo-icone ajustes-item-icone">
+                                <i class="fas fa-eye-slash"></i>
+                            </div>
+                            <div class="ajustes-item-nome ">
+                                <p>Ocultar Número</p>
+                                <label class="form-switch">
+                                    <input class="numberrec-box" type="checkbox">
+                                    <i></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="ajustes-item waves-effect waves-dark">
+                            <div class="wifi-icone ajustes-item-icone">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="ajustes-item-nome">
+                                <p>Wi-Fi</p>
+                                <span class="item-nome-secundario">RebornFibra_2.4G</span>
+                            </div>
+                        </div>
+                        <div class="ajustes-item waves-effect waves-dark">
+                            <div class="bluetooth-icone ajustes-item-icone">
+                                <i class="fab fa-bluetooth-b"></i>
+                            </div>
+                            <div class="ajustes-item-nome">
+                                <p>Bluetooth</p>
+                                <span class="item-nome-secundario">Ativo</span>
+                            </div>
+                        </div>
+                        <div class="ajustes-item waves-effect waves-dark">
+                            <div class="sinalcelular-icone ajustes-item-icone">
+                                <i class="fas fa-broadcast-tower"></i>
+                            </div>
+                            <div class="ajustes-item-nome">
+                                <p>Celular</p>
+                                <span class="item-nome-secundario">VIVO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reborn-phone-container">
+                        <div class="ajustes-item waves-effect waves-dark" data-settingstab="background">
+                            <div class="planodefundo-icone ajustes-item-icone">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <div class="ajustes-item-nome">
+                                <p>Imagem de Fundo</p>
+                            </div>
+                        </div>
+                        <!-- data-settingstab="profilepicture" -->
+                        <div class="ajustes-item waves-effect waves-dark" onclick="FotoDePerfil()">
+                            <div class="fotoperfil-icone ajustes-item-icone">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="ajustes-item-nome">
+                                <p>Foto de Perfil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-background-tab">
+                        <div class="tab-header-ios">
+                            <div id="ios-voltar-menu" class="material-icons dp48">chevron_left</div>
+                            <div class="ios-tabheader-name">Imagem de Fundo</div>
+                        </div>
+
+                        <div class="ios-separator-name">
+                            <span>IMAGEM DE FUNDO</span>
+                        </div>
+                        <div class="reborn-phone-container-other">
+                            <div class="ajustes-items-other" data-settingstab="background">
+                                <div class="ajustes-item-other">
+                                    <!-- data-background="custom-background" -->
+                                    <div class="background-change-ios waves-effect waves-dark select-background"
+                                        onclick="ImagemDeFundo()">Escolher Nova Imagem de Fundo</div>
+                                    <div class="profile-phone-setinha">
+                                        <p><i
+                                                class="material-icons dp48 profile-seta-custom setinha-ajustar-background">chevron_right</i>
+                                        </p>
+                                    </div>
+                                    <!-- <border></border> -->
+                                    <div class="ajustes-planode-fundo">
+                                        <div class="ajustes-atual-background" data-background="default-qbus"></div>
+                                        <div class="ajustes-change-background"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ios-separator-name-bottom">
+                            <span>As imagens de fundo dinâmicas e o zoom <br> de perspectiva são desativados quando o
+                                Modo Pouca energia está ativado.</span>
+                        </div>
+
+                        <div class="background-custom">
+                            <div class="background-custom-title">Alterar Plano de Fundo</div>
+                            <input type="text" class="custom-background-input" placeholder="Link da Imagem"
+                                spellcheck="false">
+
+                            <div class="background-custom-buttons">
+                                <div class="custom-background-button" id="accept-custom-background">
+                                    <p>Alterar</p>
+                                </div>
+                                <div class="custom-background-button" id="cancel-custom-background">
+                                    <p>Cancelar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-profilepicture-tab">
+                        <div class="settings-app-header">
+                            <p>Profile Picture</p>
+                        </div>
+
+                        <div class="profilepicture-options">
+                            <div class="profilepicture-option" data-profilepicture="default">
+                                <div class="profilepicture-option-icon"> <i class="fas fa-paint-brush"></i> </div>
+                                <div class="profilepicture-option-title"> Standard </div>
+                                <div class="profilepicture-option-description"> Default Profilepicture</div>
+                                <div class="profilepicture-option-current"><i class="fas fa-check-circle"></i></div>
+                            </div>
+                            <div class="profilepicture-option" data-profilepicture="custom-profilepicture">
+                                <div class="profilepicture-option-icon"><i class="fas fa-paint-brush"></i></div>
+                                <div class="profilepicture-option-title">Own</div>
+                                <div class="profilepicture-option-description"> Your own profile picture with a URL.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profilepicture-buttons">
+                            <div class="profilepicture-button" id="accept-profilepicture">
+                                <p>Confirm</p>
+                            </div>
+                            <div class="profilepicture-button" id="cancel-profilepicture">
+                                <p>Cancel</p>
+                            </div>
+                        </div>
+
+                        <div class="profilepicture-custom">
+                            <div class="profilepicture-custom-title">Own Profile Picture</div>
+                            <input type="text" class="custom-profilepicture-input" placeholder="URL (.jpg/.png)"
+                                spellcheck="false">
+
+                            <div class="profilepicture-custom-buttons">
+                                <div class="custom-profilepicture-button" id="accept-custom-profilepicture">
+                                    <p>Confirm</p>
+                                </div>
+                                <div class="custom-profilepicture-button" id="cancel-custom-profilepicture">
+                                    <p>Cancel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-call-app">
+                    <div class="phone-call-incoming">
+                        <div class="header-call-info">
+                            <div class="phone-call-incoming-picture"></div>
+                            <span class="phone-call-incoming-caller">Mayk Alexander</span>
+                            <span class="phone-call-incoming-caller-number">555-555</span>
+                            <!-- <span class="phone-call-incoming-caller-location">3123123123</span> -->
+                            <!-- <div class="phone-call-incoming-title">Ligando</div> -->
+                        </div>
+                        <div class="botton-call-info">
+                            <!-- <div class="texto-info">Toque algum dos botões para Atender ou Recusar a chamada.</div> -->
+                            <i class="fas fa-phone" id="incoming-deny"></i>
+                            <span class="answer-texto2">Recusar</span>
+
+                            <i class="fas fa-phone" id="incoming-answer"></i>
+                            <span class="answer-texto">Aceitar</span>
+                        </div>
+                    </div>
+
+                    <div class="phone-call-outgoing">
+                        <div class="phone-call-outgoing-caller">Mayk Alexander</div>
+                        <div class="phone-call-outgoing-title">Ligando...</div>
+                        <!-- <div class="phone-call-outgoing-picture"></div> -->
+                        <div class="center-outgoing-icons">
+                            <div class="call-icon-item">
+                                <ion-icon name="mic"></ion-icon>
+                                <div class="call-icon-name">Mutar</div>
+                            </div>
+                            <div class="call-icon-item">
+                                <ion-icon name="apps"></ion-icon>
+                                <div class="call-icon-name">Teclado</div>
+                            </div>
+                            <div class="call-icon-item">
+                                <ion-icon name="volume-high"></ion-icon>
+                                <div class="call-icon-name">Alto</div>
+                            </div>
+                        </div>
+                        <div class="center-outgoing-icons">
+                            <div class="call-icon-item  disabled-call-icon">
+                                <ion-icon name="add"></ion-icon>
+                                <div class="call-icon-name disabled-call-icon">Add Call</div>
+                            </div>
+                            <div class="call-icon-item disabled-call-icon">
+                                <ion-icon name="videocam"></ion-icon>
+                                <div class="call-icon-name disabled-call-icon">FaceTime</div>
+                            </div>
+                            <div class="call-icon-item">
+                                <ion-icon name="person"></ion-icon>
+                                <div class="call-icon-name">Contatos</div>
+                            </div>
+                        </div>
+
+                        <i class="fas fa-phone" id="outgoing-cancel"></i>
+                    </div>
+
+                    <div class="phone-call-ongoing">
+                        <div class="phone-call-ongoing-caller">Mayk Alexander</div>
+                        <div class="phone-call-ongoing-title">Em chamada</div>
+                        <!-- <div class="phone-call-ongoing-picture"></div> -->
+                        <div class="phone-call-ongoing-time">05:05</div>
+
+                        <div class="center-outgoing-icons">
+                            <div class="call-icon-item">
+                                <ion-icon name="mic"></ion-icon>
+                                <div class="call-icon-name">Mutar</div>
+                            </div>
+                            <div class="call-icon-item">
+                                <ion-icon name="apps"></ion-icon>
+                                <div class="call-icon-name">Teclado</div>
+                            </div>
+                            <div class="call-icon-item">
+                                <ion-icon name="volume-high"></ion-icon>
+                                <div class="call-icon-name">Alto</div>
+                            </div>
+                        </div>
+                        <div class="center-outgoing-icons">
+                            <div class="call-icon-item  disabled-call-icon">
+                                <ion-icon name="add"></ion-icon>
+                                <div class="call-icon-name disabled-call-icon">Add Call</div>
+                            </div>
+                            <div class="call-icon-item disabled-call-icon">
+                                <ion-icon name="videocam"></ion-icon>
+                                <div class="call-icon-name disabled-call-icon">FaceTime</div>
+                            </div>
+                            <div class="call-icon-item">
+                                <ion-icon name="person"></ion-icon>
+                                <div class="call-icon-name">Contatos</div>
+                            </div>
+                        </div>
+
+                        <i class="fas fa-phone" id="ongoing-cancel"></i>
+                    </div>
+                </div>
+
+                <div class="phone-app">
+                    <!-- <span class="voltar-button" ><</span> -->
+
+
+                    <!-- <div class="phone-app-footer">
+                            <div class="phone-app-footer-button" data-phonefootertab="keypad">
+                                <p>Ligar</p>
+                            </div>
+                            <div class="phone-app-footer-button phone-selected-footer-tab" data-phonefootertab="contacts">
+                                <p>Contatos</p>
+                            </div>
+                        </div> -->
+
+
+
+                    <!--  <div class="phone-app-header">
+                            <p>Phone</p>
+                            <span id="total-contacts">0 contacts #SAD loser</span>
+                        </div>-->
+
+
+
+                    <!-- <div class="phone-contacts-header">
+                                <input type="text" id="contact-search" placeholder="Nome do contato" spellcheck="false">                               
+                            </div> -->
+
+                    <!-- <div class="phone-contact-list"></div> -->
+                    <!--
+                                <div class="phone-contact" data-contactid="1">
+                                    <div class="phone-contact-firstletter">P</div>
+                                    <div class="phone-contact-name">Pieter Post</div>
+                                    <div class="phone-contact-actions"><i class="fas fa-chevron-right"></i></div>
+                                    <div class="phone-contact-action-buttons">
+                                        <i class="fas fa-phone-volume"></i>
+                                        <i class="fas fa-comment"></i>
+                                        <i class="fas fa-user-edit"></i>
+                                    </div>
+                                </div>
+                                 -->
+
+                    <!-- <i id="phone-plus-icon" class="fas fa-plus"></i> -->
+
+
+                    <div class="phone-recent">
+                        <div class="phone-recent-header">
+                            <p>Phone</p>
+                        </div>
+
+                        <div class="phone-recent-calls">
+                            <!-- <div class="phone-recent-call"> <div class="phone-recent-call-image">P</div> <div class="phone-recent-call-name">Pieter Post</div> <div class="phone-recent-call-type"></div> <div class="phone-recent-call-time">12:05</div> </div> -->
+                        </div>
+                    </div>
+
+                    <!-- <div class="phone-suggestedcontacts">
+                        <div class="phone-suggestedcontacts-header">
+                            Suggested Contacts
+                            <p class="amount-of-suggested-contacts">0 Contacts</p>
+                        </div>
+
+                        <div class="suggested-contacts">
+                            <div class="suggested-contact"> <i class="fas fa-exclamation-circle"></i> <span
+                                    class="suggested-name">Jay Nandes &middot; <span
+                                        class="suggested-number">0612345678</span></span> </div>
+                            <div class="suggested-contact">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span class="suggested-name">Jay Nandes &middot; <span
+                                        class="suggested-number">0612345678</span></span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="phone-keypad noselect">
+                        <div class="phone-recent-calls">
+
+                            <!-- <div class="phone-recent-call"> <div class="phone-recent-call-image">P</div> <div class="phone-recent-call-name">Pieter Post</div> <div class="phone-recent-call-type"></div> <div class="phone-recent-call-time">12:05</div> </div>
+                                <div class="phone-recent-call"> <div class="phone-recent-call-image">P</div> <div class="phone-recent-call-name">Pieter Post</div> <div class="phone-recent-call-type"></div> <div class="phone-recent-call-time">12:05</div> </div>
+                                <div class="phone-recent-call"> <div class="phone-recent-call-image">P</div> <div class="phone-recent-call-name">Pieter Post</div> <div class="phone-recent-call-type"></div> <div class="phone-recent-call-time">12:05</div> </div>
+                                <div class="phone-recent-call"> <div class="phone-recent-call-image">P</div> <div class="phone-recent-call-name">Pieter Post</div> <div class="phone-recent-call-type"></div> <div class="phone-recent-call-time">12:05</div> </div>
+                                <div class="phone-recent-call"> <div class="phone-recent-call-image">P</div> <div class="phone-recent-call-name">Pieter Post</div> <div class="phone-recent-call-type"></div> <div class="phone-recent-call-time">12:05</div> </div>
+                                <div class="phone-recent-call"> <div class="phone-recent-call-image">P</div> <div class="phone-recent-call-name">Pieter Post</div> <div class="phone-recent-call-type"></div> <div class="phone-recent-call-time">12:05</div> </div> -->
+
+                        </div>
+                        <!--
+                                <div class="suggested-contact">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span class="suggested-name">Mayk Alexander <span class="suggested-number">0612345678</span></span>
+                                </div>
+                                <div class="suggested-contact">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span class="suggested-name">Maria Eduarda <span class="suggested-number">0801365899</span></span>
+                                </div>
+                                <div class="suggested-contact">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span class="suggested-name">Leona <span class="suggested-number">0235841132</span></span>
+                                </div>
+                                <div class="suggested-contact">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span class="suggested-name">Duda Demonio <span class="suggested-number">0664731001</span></span>
+                                </div>
+                                 -->
+
+
+
+                        <!-- <div class="phone-keypad-keys">
+                                <div id="phone-keypad-input"></div>
+                                <i class="apagar-icon fas fa-backspace" data-keypadvalue="#"></i>
+                                <div class="phone-keypad-key" data-keypadvalue="1">1 <span class="desc-num"><i class="fas fa-voicemail"></i></span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="2">2 <span class="desc-num">abc</span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="3">3 <span class="desc-num">def</span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="4">4 <span class="desc-num">ghi</span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="5">5 <span class="desc-num">jkl</span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="6">6 <span class="desc-num">mno</span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="7">7 <span class="desc-num">pqrs</span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="8">8 <span class="desc-num">tuv</span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="9">9 <span class="desc-num">wxyz</span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="*">* <span class="desc-num">,</span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="0">0 <span class="desc-num">+</span></div>
+                                <div class="phone-keypad-key" data-keypadvalue="#">#</div>
+                            </div>
+                            <div class="phone-keypad-key-call"><i class="fas fa-phone-alt"></i></div> -->
+                    </div>
+
+                    <div class="phone-add-contact">
+                        <div class="phone-add-contact-header">
+                            <div class="cancelar-left-button" id="add-contact-cancel">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+                            <div class="titulo-header-meio">Novo Contato</div>
+                            <div class="confirmar-novo-contato" id="add-contact-save">OK</div>
+                        </div>
+
+                        <!-- <i id="phone-add-contact-name-icon" class="fas fa-user"></i> -->
+                        <span id="phone-add-contact-name-icon">Foto</span>
+                        <input type="text" class="phone-add-contact-name" placeholder="Nome do Contato" required
+                            spellcheck="false">
+                        <input type="text" class="phone-add-contact-name outro-sobrenome" placeholder="Nome Pessoal"
+                            required spellcheck="false">
+                        <input type="text" class="phone-add-contact-name outro-empresa" placeholder="Empresa" required
+                            spellcheck="false">
+
+                        <ion-icon id="phone-add-contact-number-icon" name="add"></ion-icon>
+                        <input type="number" class="phone-add-contact-number" placeholder="adicionar telefone" required
+                            spellcheck="false">
+
+                        <ion-icon id="phone-add-contact-iban-icon" name="wallet"></ion-icon>
+                        <input type="text" class="phone-add-contact-iban" placeholder="Conta Bancária" required
+                            spellcheck="false">
+
+                    </div>
+
+                    <div class="phone-edit-contact">
+                        <div class="phone-edit-contact-header">
+                            <div class="cancelar-left-button" id="edit-contact-cancel">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </div>
+                            <div class="titulo-header-meio" id="editar-contato-titulo-header">Novo Contato</div>
+                            <div class="confirmar-novo-contato" id="edit-contact-save">OK</div>
+                        </div>
+                        <span id="phone-add-contact-name-icon">Foto</span>
+                        <!-- <i id="phone-edit-contact-name-icon" class="fas fa-user"></i> -->
+                        <input type="text" class="phone-edit-contact-name" placeholder="Contact Name" required
+                            spellcheck="false">
+
+                        <!-- <i id="phone-edit-contact-number-icon" class="fas fa-phone-alt"></i> -->
+                        <ion-icon id="phone-edit-contact-number-icon" name="add"></ion-icon>
+                        <input type="number" class="phone-edit-contact-number" placeholder="Phone-Number" required
+                            spellcheck="false">
+
+                        <ion-icon id="phone-edit-contact-iban-icon" name="wallet"></ion-icon>
+                        <input type="text" class="phone-edit-contact-iban" placeholder="Bank No. (Not required" required
+                            spellcheck="false">
+
+                    </div>
+
+                    <ion-tabs class="tab-ios-phone" mode="ios">
+                        <ion-tab tab="tab-recentes" class="tab-float" mode="ios">
+                            <ion-nav>
+                                <!-- Botoes acima -->
+                                <ion-toolbar class="tab-slide-buttons">
+                                    <ion-segment value="all">
+                                        <ion-segment-button value="Liga" class="todasligacoes">
+                                            Todas
+                                        </ion-segment-button>
+                                        <ion-segment-button value="rece" class="ligacoesrecebidas">
+                                            Recebidas
+                                        </ion-segment-button>
+                                    </ion-segment>
+                                </ion-toolbar>
+                                <!-- Header da tab -->
+                                <ion-header>
+                                    <ion-toolbar>
+                                        <ion-title class="titulo-tab" size="large">Recentes</ion-title>
+                                    </ion-toolbar>
+                                </ion-header>
+                                <!-- Conteudo Recentes -->
+                                <div class="phone-recent-calls">
+                                    <div class="phone-recent-call">
+                                        <div class="phone-recent-call-image"></div>
+                                        <div class="phone-recent-call-name">Mayk</div>
+                                        <div class="phone-recent-call-type">Ligação Recebida</div>
+                                        <div class="phone-recent-call-time">12:05</div>
+                                    </div>
+                                    <div class="phone-recent-call">
+                                        <div class="phone-recent-call-image"></div>
+                                        <div class="phone-recent-call-name">Amor</div>
+                                        <div class="phone-recent-call-type">Ligação Recebida</div>
+                                        <div class="phone-recent-call-time">12:05</div>
+                                    </div>
+                                    <div class="phone-recent-call">
+                                        <div class="phone-recent-call-image"></div>
+                                        <div class="phone-recent-call-name">Leona</div>
+                                        <div class="phone-recent-call-type">Ligação Recebida</div>
+                                        <div class="phone-recent-call-time">12:05</div>
+                                    </div>
+                                    <div class="phone-recent-call">
+                                        <div class="phone-recent-call-image"></div>
+                                        <div class="phone-recent-call-name">Blablabla</div>
+                                        <div class="phone-recent-call-type">Ligação Realizada</div>
+                                        <div class="phone-recent-call-time">12:05</div>
+                                    </div>
+                                    <div class="phone-recent-call">
+                                        <div class="phone-recent-call-image"></div>
+                                        <div class="phone-recent-call-name">Demonio</div>
+                                        <div class="phone-recent-call-type">Ligação Realizada</div>
+                                        <div class="phone-recent-call-time">12:05</div>
+                                    </div>
+                                    <div class="phone-recent-call">
+                                        <div class="phone-recent-call-image"></div>
+                                        <div class="phone-recent-call-name">Teste Pessoa</div>
+                                        <div class="phone-recent-call-type">Ligação Realizada</div>
+                                        <div class="phone-recent-call-time">12:05</div>
+                                    </div>
+                                    <div class="phone-recent-call">
+                                        <div class="phone-recent-call-image"></div>
+                                        <div class="phone-recent-call-name">Capeta</div>
+                                        <div class="phone-recent-call-type">Ligação Realizada</div>
+                                        <div class="phone-recent-call-time">12:05</div>
+                                    </div>
+                                    <div class="phone-recent-call">
+                                        <div class="phone-recent-call-image"></div>
+                                        <div class="phone-recent-call-name">Carro</div>
+                                        <div class="phone-recent-call-type">Ligação Recebida</div>
+                                        <div class="phone-recent-call-time">12:05</div>
+                                    </div>
+                                    <div class="phone-recent-call">
+                                        <div class="phone-recent-call-image"></div>
+                                        <div class="phone-recent-call-name">Policial</div>
+                                        <div class="phone-recent-call-type">Ligação Recebida</div>
+                                        <div class="phone-recent-call-time">12:05</div>
+                                    </div>
+                                    <div class="phone-recent-call">
+                                        <div class="phone-recent-call-image"></div>
+                                        <div class="phone-recent-call-name">Paramedico</div>
+                                        <div class="phone-recent-call-type">Ligação Recebida</div>
+                                        <div class="phone-recent-call-time">12:05</div>
+                                    </div>
+                                </div>
+                            </ion-nav>
+                        </ion-tab>
+
+                        <ion-tab tab="tab-discar">
+                            <ion-nav class="tab-float">
+                                <div class="phone-keypad-keys">
+                                    <div id="phone-keypad-input"></div>
+                                    <i class="apagar-icon fas fa-backspace" data-keypadvalue="#"></i>
+                                    <div class="phone-keypad-key" data-keypadvalue="1">1 <span class="desc-num"></span>
+                                    </div>
+                                    <div class="phone-keypad-key" data-keypadvalue="2">2 <span
+                                            class="desc-num">abc</span></div>
+                                    <div class="phone-keypad-key" data-keypadvalue="3">3 <span
+                                            class="desc-num">def</span></div>
+                                    <div class="phone-keypad-key" data-keypadvalue="4">4 <span
+                                            class="desc-num">ghi</span></div>
+                                    <div class="phone-keypad-key" data-keypadvalue="5">5 <span
+                                            class="desc-num">jkl</span></div>
+                                    <div class="phone-keypad-key" data-keypadvalue="6">6 <span
+                                            class="desc-num">mno</span></div>
+                                    <div class="phone-keypad-key" data-keypadvalue="7">7 <span
+                                            class="desc-num">pqrs</span></div>
+                                    <div class="phone-keypad-key" data-keypadvalue="8">8 <span
+                                            class="desc-num">tuv</span></div>
+                                    <div class="phone-keypad-key" data-keypadvalue="9">9 <span
+                                            class="desc-num">wxyz</span></div>
+                                    <div class="phone-keypad-key key-centered">*</div>
+                                    <div class="phone-keypad-key" data-keypadvalue="0">0 <span class="desc-num">+</span>
+                                    </div>
+                                    <div class="phone-keypad-key" data-keypadvalue="#">#</div>
+                                </div>
+                                <div class="phone-keypad-key-apagar" data-keypadvalue="*">
+                                    <ion-icon data-keypadvalue="*" name="backspace"></ion-icon>
+                                </div>
+                                <div class="phone-keypad-key-call"><i class="fas fa-phone-alt"></i></div>
+                            </ion-nav>
+                        </ion-tab>
+
+                        <ion-tab tab="tab-contatos">
+
+                            <ion-nav class="tab-float">
+                                <ion-content fullscreen="true">
+                                    <ion-header collapse="condense">
+                                        <ion-toolbar class="toolbar-tab-custom">
+                                            <ion-title class="tab-header-title" size="large">Contatos</ion-title>
+                                        </ion-toolbar>
+                                        <ion-icon class="tab-button-right" id="adicionar-contato" name="add"></ion-icon>
+                                        <ion-toolbar>
+                                            <input type="text" id="header-pesquisar-input" placeholder="Buscar"
+                                                spellcheck="false">
+                                        </ion-toolbar>
+                                    </ion-header>
+                                </ion-content>
+                                <div class="ios-abc-contactos">
+                                    <span>A</span>
+                                    <span>B</span>
+                                    <span>C</span>
+                                    <span>D</span>
+                                    <span>E</span>
+                                    <span>F</span>
+                                    <span>G</span>
+                                    <span>H</span>
+                                    <span>I</span>
+                                    <span>J</span>
+                                    <span>M</span>
+                                    <span>N</span>
+                                    <span>O</span>
+                                    <span>P</span>
+                                    <span>Q</span>
+                                    <span>R</span>
+                                    <span>S</span>
+                                    <span>T</span>
+                                    <span>U</span>
+                                    <span>V</span>
+                                    <span>W</span>
+                                    <span>X</span>
+                                    <span>Y</span>
+                                    <span>Z</span>
+                                    <span>#</span>
+                                </div>
+                                <div class="phone-contacts">
+                                    <div class="phone-contact-list" id="my-list">
+                                        <div class="ios-meunumero">
+                                            <div class="profile-avatar-contatos materialboxed"></div>
+                                            <spanx class="profile-nome-pessoal">Carregando...</spanx>
+                                            <spanx class="profile-subname-pessoal">carregando...</spanx>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Pieter Post</span>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Pieter Post</span>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Pieter Post</span>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Pieter Post</span>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Pieter Post</span>
+                                        </div>
+
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Aieter Post</span>
+                                        </div>
+
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Aieter Post</span>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Aieter Post</span>
+                                        </div>
+
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Aieter Post</span>
+                                        </div>
+
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Aieter Post</span>
+                                        </div>
+
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Bieter Post</span>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Bieter Post</span>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Bieter Post</span>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Bieter Post</span>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Bieter Post</span>
+                                        </div>
+                                        <div class="phone-contact" data-contactid="1">
+                                            <span class="phone-contact-name">Bieter Post</span>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </ion-nav>
+                        </ion-tab>
+
+                        <ion-tab-bar class="tab-status" slot="bottom">
+                            <ion-tab-button class="tab-buttons-container" tab="tab-recentes">
+                                <ion-icon class="tab-icon-size" name="time"></ion-icon>
+                                <ion-label class="tab-label-size">Recentes</ion-label>
+                            </ion-tab-button>
+
+                            <ion-tab-button class="tab-buttons-container" tab="tab-discar">
+                                <ion-icon class="tab-icon-size" name="apps"></ion-icon>
+                                <ion-label class="tab-label-size">Teclado</ion-label>
+                            </ion-tab-button>
+
+                            <ion-tab-button class="tab-buttons-container" tab="tab-contatos">
+                                <ion-icon class="tab-icon-size" name="people"></ion-icon>
+                                <ion-label class="tab-label-size">Contatos</ion-label>
+                            </ion-tab-button>
+                        </ion-tab-bar>
+                    </ion-tabs>
+                </div>
+
+                <div class="houses-app">
+                    <div class="houses-app-header">
+                        <div class="houses-app-header-tab houses-app-header-tab-selected" data-housetab="myhouses">
+                            <p>My Houses</p>
+                        </div>
+                        <!-- <div class="houses-app-header-tab" data-housetab="mykeys"><p>My Keys</p></div>-->
+                    </div>
+
+                    <div class="house-app-myhouses-container">
+                        <div class="myhouses-house">
+                            <div class="myhouse-house-icon"><i class="fas fa-home"></i></div>
+                            <div class="myhouse-house-titel">Davis St| Tier 1</div>
+                            <div class="myhouse-house-details"><i class="fas fa-key"></i>&nbsp;&nbsp;5</div>
+                        </div>
+                    </div>
+
+                    <div class="house-app-mykeys-container">
+
+                    </div>
+
+                    <div class="myhouses-options-container">
+                        <div class="myhouses-options">
+                            <div class="myhouses-options-header">Davis St. 1</div>
+                            <!--<div class="myhouses-option" id="myhouse-option-transfer">TRANSFER</div>-->
+                            <!--<div class="myhouses-option" id="myhouse-option-keys">KEYS</div>-->
+                            <br>
+                            <br>
+                            <div class="myhouses-option" id="myhouse-option-close">CLOSE</div>
+                        </div>
+
+                        <div class="myhouse-option-transfer-container">
+                            <div class="myhouse-option-transfer-container-header">Transfer House</div>
+                            <input class="myhouse-option-transfer-container-citizenid" type="text" spellcheck="false"
+                                placeholder="SSN" required>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="myhouses-option" id="myhouse-option-transfer-confirm">CONFIRM</div>
+                            <div class="myhouses-option" id="myhouse-option-transfer-back">BACK</div>
+                        </div>
+
+                        <div class="myhouse-option-keys-container">
+                            <div class="keys-container">
+                                <!-- <div class="house-key"> <span class="house-key-holder">Test Test</span> <div class="house-key-delete"><i class="fas fa-trash"></i></div> </div> -->
+                                <!-- <div class="house-key">
+                                        <span class="house-key-holder">Test Test</span>
+                                        <div class="house-key-delete"><i class="fas fa-trash"></i></div>
+                                    </div> -->
+                            </div>
+                            <div class="myhouses-option" id="myhouse-option-keys-back">BACK</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="garage-app">
+                    <div class="garage-app-header">
+                        Meus Carros
+                    </div>
+                    <div class="garage-homescreen">
+                        <div class="garage-vehicles">
+
+                            <!-- <div class="garage-vehicle waves-effect waves-dark">
+                                <div class="garage-vehicle-foto">
+                                    <ion-icon name="car-sport"></ion-icon>
+                                </div>
+                                <div class="garage-vehicle-name">
+                                    <span class="nome-do-carro">Kuruma</span>
+                                    <span class="placa-do-carro">Placa: <strong
+                                            class="placadocarro">YBTZS50</strong></span>
+                                </div>
+                            </div>
+                            <div class="garage-vehicle waves-effect waves-dark">
+                                <div class="garage-vehicle-foto">
+                                    <ion-icon name="car-sport"></ion-icon>
+                                </div>
+                                <div class="garage-vehicle-name">
+                                    <span class="nome-do-carro">Kuruma</span>
+                                    <span class="placa-do-carro">Placa: <strong
+                                            class="placadocarro">YBTZS50</strong></span>
+                                </div>
+                            </div>
+                            <div class="garage-vehicle waves-effect waves-dark">
+                                <div class="garage-vehicle-foto">
+                                    <ion-icon name="car-sport"></ion-icon>
+                                </div>
+                                <div class="garage-vehicle-name">
+                                    <span class="nome-do-carro">Kuruma</span>
+                                    <span class="placa-do-carro">Placa: <strong
+                                            class="placadocarro">YBTZS50</strong></span>
+                                </div>
+                            </div>
+                            <div class="garage-vehicle waves-effect waves-dark">
+                                <div class="garage-vehicle-foto">
+                                    <ion-icon name="car-sport"></ion-icon>
+                                </div>
+                                <div class="garage-vehicle-name">
+                                    <span class="nome-do-carro">Kuruma</span>
+                                    <span class="placa-do-carro">Placa: <strong
+                                            class="placadocarro">YBTZS50</strong></span>
+                                </div>
+                            </div>
+                            <div class="garage-vehicle waves-effect waves-dark">
+                                <div class="garage-vehicle-foto">
+                                    <ion-icon name="car-sport"></ion-icon>
+                                </div>
+                                <div class="garage-vehicle-name">
+                                    <span class="nome-do-carro">Kuruma</span>
+                                    <span class="placa-do-carro">Placa: <strong
+                                            class="placadocarro">YBTZS50</strong></span>
+                                </div>
+                            </div>
+                            <div class="garage-vehicle waves-effect waves-dark">
+                                <div class="garage-vehicle-foto">
+                                    <ion-icon name="car-sport"></ion-icon>
+                                </div>
+                                <div class="garage-vehicle-name">
+                                    <span class="nome-do-carro">Kuruma</span>
+                                    <span class="placa-do-carro">Placa: <strong
+                                            class="placadocarro">YBTZS50</strong></span>
+                                </div>
+                            </div>
+                            <div class="garage-vehicle waves-effect waves-dark">
+                                <div class="garage-vehicle-foto">
+                                    <ion-icon name="car-sport"></ion-icon>
+                                </div>
+                                <div class="garage-vehicle-name">
+                                    <span class="nome-do-carro">Kuruma</span>
+                                    <span class="placa-do-carro">Placa: <strong
+                                            class="placadocarro">YBTZS50</strong></span>
+                                </div>
+                            </div>
+                            <div class="garage-vehicle waves-effect waves-dark">
+                                <div class="garage-vehicle-foto">
+                                    <ion-icon name="car-sport"></ion-icon>
+                                </div>
+                                <div class="garage-vehicle-name">
+                                    <span class="nome-do-carro">Kuruma</span>
+                                    <span class="placa-do-carro">Placa: <strong
+                                            class="placadocarro">YBTZS50</strong></span>
+                                </div>
+                            </div> -->
+
+
+                        </div>
+                    </div>
+
+                    <div class="garage-detailscreen">
+                        <div class="garage-cardetails">
+                            <div class="reborn-phone-container">
+                                <div class="ajustes-item waves-effect waves-dark">
+                                    <div class="wifi-icone ajustes-item-icone">
+                                        <ion-icon name="car-sport"></ion-icon>
+                                    </div>
+                                    <div class="ajustes-item-nome">
+                                        <p>Nome</p>
+                                        <span class="item-nome-secundario branditem">T20</span>
+                                    </div>
+                                </div>
+                                <div class="ajustes-item waves-effect waves-dark">
+                                    <div class="wifi-icone ajustes-item-icone">
+                                        <ion-icon name="checkmark-circle"></ion-icon>
+                                    </div>
+                                    <div class="ajustes-item-nome">
+                                        <p>Modelo</p>
+                                        <span class="item-nome-secundario modeloitem">Sport</span>
+                                    </div>
+                                </div>
+                                <div class="ajustes-item waves-effect waves-dark">
+                                    <div class="wifi-icone ajustes-item-icone">
+                                        <ion-icon name="document-text"></ion-icon>
+                                    </div>
+                                    <div class="ajustes-item-nome">
+                                        <p>Placa</p>
+                                        <span class="item-nome-secundario placaitem">YBTZS50</span>
+                                    </div>
+                                </div>
+                                <div class="ajustes-item waves-effect waves-dark">
+                                    <div class="wifi-icone ajustes-item-icone">
+                                        <ion-icon name="document-text"></ion-icon>
+                                    </div>
+                                    <div class="ajustes-item-nome">
+                                        <p>Garagem</p>
+                                        <span class="item-nome-secundario garagemitem">Alta Motels</span>
+                                    </div>
+                                </div>
+                                <div class="ajustes-item waves-effect waves-dark">
+                                    <div class="wifi-icone ajustes-item-icone">
+                                        <ion-icon name="stats-chart"></ion-icon>
+                                    </div>
+                                    <div class="ajustes-item-nome">
+                                        <p>Status</p>
+                                        <span class="item-nome-secundario statusitem">Na Garagem</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reborn-phone-container">
+                                <div class="ajustes-item waves-effect waves-dark">
+                                    <div class="wifi-icone ajustes-item-icone">
+                                        <ion-icon name="color-fill"></ion-icon>
+                                    </div>
+                                    <div class="ajustes-item-nome">
+                                        <p>Combustivel</p>
+                                        <span class="item-nome-secundario combustivelitem">90%</span>
+                                    </div>
+                                </div>
+                                <div class="ajustes-item waves-effect waves-dark">
+                                    <div class="wifi-icone ajustes-item-icone">
+                                        <ion-icon name="construct"></ion-icon>
+                                    </div>
+                                    <div class="ajustes-item-nome">
+                                        <p>Motor</p>
+                                        <span class="item-nome-secundario motoritem">100%</span>
+                                    </div>
+                                </div>
+                                <div class="ajustes-item waves-effect waves-dark">
+                                    <div class="wifi-icone ajustes-item-icone">
+                                        <ion-icon name="color-palette"></ion-icon>
+                                    </div>
+                                    <div class="ajustes-item-nome">
+                                        <p>Lataria</p>
+                                        <span class="item-nome-secundario latariaitem">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!-- <div class="vehicle-brand"><span class="vehicle-detail">Brand</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-model"><span class="vehicle-detail">Model</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-plate"><span class="vehicle-detail">License Plate</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-garage"><span class="vehicle-detail">Garage</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-status"><span class="vehicle-detail">Status</span><span class="vehicle-answer">BMW M5</span></div>
+                                &nbsp;
+                                <div class="vehicle-fuel"><span class="vehicle-detail">Fuel</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-engine"><span class="vehicle-detail">Motor</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-body"><span class="vehicle-detail">Body</span><span class="vehicle-answer">BMW M5</span></div>
+     -->
+                            <div class="garage-cardetails-footer">
+                                <i class="material-icons dp48 voltar-icone">chevron_left</i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyers-app">
+                    <div class="lawyers-header">
+                        <p>Law firm</p>
+                        <span>Available lawyers</span>
+                    </div>
+
+                    <div class="lawyers-list">
+                        <!-- <div class="lawyer-list">
+                                <div class="lawyer-list-firstletter">J</div>
+                                <div class="lawyer-list-fullname">Jay Nandes</div>
+                                <div class="lawyer-list-call"><i class="fas fa-phone"></i></div>
+                            </div>
+                            <div class="lawyer-list">
+                                <div class="lawyer-list-firstletter">J</div>
+                                <div class="lawyer-list-fullname">Jay Nandes</div>
+                                <div class="lawyer-list-call"><i class="fas fa-phone"></i></div>
+                            </div>
+                            <div class="lawyer-list">
+                                <div class="lawyer-list-firstletter">J</div>
+                                <div class="lawyer-list-fullname">Jay Nandes</div>
+                                <div class="lawyer-list-call"><i class="fas fa-phone"></i></div>
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="crypto-app">
+                    <div class="crypto-header">
+
+                        <img src="./img/bitcoin.png" class="crypto-header-picture">
+
+                        <div class="crypto-header-values">
+                            <div class="crypto-header-value crypto-portofolio">
+                                <span>Portfolio</span>
+                                <p>0.2555</p>
+                            </div>
+                            <div class="crypto-header-value crypto-course">
+                                <span>Course</span>
+                                <p>$9000</p>
+                            </div>
+                            <div class="crypto-header-value crypto-volume">
+                                <span>Volume</span>
+                                <p>$2299.5‬</p>
+                            </div>
+                        </div>
+
+                        <div class="crypto-header-footer">
+                            <div class="crypto-header-footer-item" data-cryptotab="general">
+                                General
+                            </div>
+                            <div class="crypto-header-footer-item" data-cryptotab="transactions">
+                                Transactions
+                            </div>
+                            <div class="crypto-header-footer-item" data-cryptotab="course">
+                                Course
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="crypto-action-page">
+                        <div class="crypto-action-page-buy-crypto">
+
+                            <div class="crypto-action-page-header">Bitcoin Shopping</div>
+
+                            <div class="crypto-action-page-wallet">Portfolio: 1.000500 Bitcoin('s)</div>
+
+                            <i class="crypto-action-page-buy-crypto-input-coins-icon fas fa-coins"></i>
+                            <input type="number" class="crypto-action-page-buy-crypto-input-coins" required
+                                spellcheck="false" placeholder="1.000000" step="0.000001" min="0">
+
+                            <i class="crypto-action-page-buy-crypto-input-money-icon fas fa-dollar-sign"></i>
+                            <input type="number" class="crypto-action-page-buy-crypto-input-money" required
+                                spellcheck="false" placeholder="1000" step="1.0" min="0">
+
+                            <div class="crypto-action-page-buy-crypto-footer">
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="buy-crypto">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="cancel-crypto">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crypto-action-page-sell-crypto">
+
+                            <div class="crypto-action-page-header">Bitcoin Sell</div>
+
+                            <div class="crypto-action-page-wallet">Portfolio: 1.000500 Bitcoin('s)</div>
+
+                            <i class="crypto-action-page-sell-crypto-input-coins-icon fas fa-coins"></i>
+                            <input type="number" class="crypto-action-page-sell-crypto-input-coins" required
+                                spellcheck="false" placeholder="1.000000" step="0.000001" min="0">
+
+                            <i class="crypto-action-page-sell-crypto-input-money-icon fas fa-dollar-sign"></i>
+                            <input type="number" class="crypto-action-page-sell-crypto-input-money" required
+                                spellcheck="false" placeholder="1000" step="1.0" min="0">
+
+                            <div class="crypto-action-page-buy-crypto-footer">
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="sell-crypto">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="cancel-crypto">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crypto-action-page-transfer-crypto">
+
+                            <div class="crypto-action-page-header">Bitcoin Transfer</div>
+
+                            <div class="crypto-action-page-wallet">Portfolio: 0 Bitcoin('s)</div>
+
+                            <i class="crypto-action-page-transfer-crypto-input-coins-icon fas fa-coins"></i>
+                            <input type="number" class="crypto-action-page-transfer-crypto-input-coins" required
+                                spellcheck="false" placeholder="1.000000" step="0.000001" min="0">
+
+                            <i class="crypto-action-page-transfer-crypto-input-money-icon fas fa-address-book"></i>
+                            <input type="texts" class="crypto-action-page-transfer-crypto-input-walletid" required
+                                spellcheck="false" placeholder="QB-12345678">
+
+                            <div class="crypto-action-page-buy-crypto-footer">
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="transfer-crypto">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="cancel-crypto">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="crypto-page">
+                        <div class="cryptotab-general">
+                            <div class="cryptotab-general-actions">
+                                <div class="cryptotab-general-action" data-action="buy-crypto">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <span class="cryptotab-general-action-title">SHOPPING</span>
+                                    <span class="cryptotab-general-action-description">Here you can buy crypto.</span>
+                                </div>
+                                <div class="cryptotab-general-action" data-action="sell-crypto">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <span class="cryptotab-general-action-title">SELL</span>
+                                    <span class="cryptotab-general-action-description">Here you can sell crypto.</span>
+                                </div>
+                                <div class="cryptotab-general-action" data-action="transfer-crypto">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <span class="cryptotab-general-action-title">TRANSFER</span>
+                                    <span class="cryptotab-general-action-description">Here you can transfer
+                                        crypto.</span>
+                                </div>
+                            </div>
+                            <span class="crypto-walletid">Wallet ID: CA-12345678</span>
+                        </div>
+
+                        <div class="cryptotab-transactions">
+                            <div class="cryptotab-transactions-list">
+                                <!-- <div class="cryptotab-transactions-block">
+                                        <i class="fas fa-exchange-alt"></i>
+                                        <span class="cryptotab-transactions-block-title" style="color: green !important;">Bijschrijving</span>
+                                        <span class="cryptotab-transactions-block-happening">Er is &#36;1000,- bijgeschreven</span>
+                                    </div> -->
+                            </div>
+                        </div>
+
+                        <div class="cryptotab-course">
+                            <div class="cryptotab-course-list">
+                                <!-- <div class="cryptotab-course-block">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span class="cryptotab-course-block-title">Koers verandering</span>
+                                        <span class="cryptotab-course-block-happening"><span style="font-size: 1.3vh;">€1000</span> naar <span style="font-size: 1.3vh;">€2000</span><span style="color: green;" class="crypto-percentage-change"><i style="color: green;" class="fas fa-arrow-right"></i> +(100%)</span></span>
+                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="meos-app">
+                    <input type="text" id="testerino">
+                    <div class="meos-app-header">
+                        <span id="meos-app-title">Policia</span>
+                        <ion-icon href="#"class="abrir-menulateral" name="list"></ion-icon>
+                        <i class="material-icons dp48 voltar-icone-policia">chevron_left</i>
+                        <div class="foto-perfil-policial-header tooltipped" data-position="bottom"
+                            data-tooltip="Foto de Perfil"></div>
+                        <!-- <span id="meos-app-name">Welcome Jay Nandes</span> -->
+                    </div>
+
+                    <!-- <a href="#" data-target="slide-out" class="abrir-menulateral sidenav-trigger"><i class="material-icons">menu</i></a> -->
+
+                    <div class="home-content-policial">
+                        <!-- <div class="Titulo-Alertas"><ion-icon class="alert-icone" name="alert"></ion-icon>Alertas Policiais</div>
+                            <ion-icon class="icon-alert2" name="caret-down"></ion-icon>
+                             -->
+                        <div class="row menu-policial">
+                            <div class="col s12">
+                                <ul id="tabs-swipe-demo" class="tabs">
+                                    <li class="tab col s3 clicktoloading"><a class="active menu-policial-item tooltipped" data-position="bottom" data-tooltip="Alertas" href="#alertas">
+                                            <ion-icon name="alert"></ion-icon>
+                                        </a></li>
+                                    <li class="tab col s3 clicktoloading"><a class="menu-policial-item tooltipped" data-position="bottom" data-tooltip="Pessoas" href="#paginapessoas">
+                                            <ion-icon name="people"></ion-icon>
+                                        </a></li>
+                                    <li class="tab col s3 clicktoloading"><a class="menu-policial-item tooltipped" data-position="bottom" data-tooltip="Veiculos" href="#paginaveiculo">
+                                            <ion-icon name="car"></ion-icon>
+                                        </a></li>
+                                    <li class="tab col s3 clicktoloading"><a class="menu-policial-item tooltipped" data-position="bottom" data-tooltip="Residencias" href="#paginacasas">
+                                            <ion-icon name="home"></ion-icon>
+                                        </a></li>
+                                </ul>
+                            </div>
+                            <div id="alertas" class="col s12">
+                                <div class="meos-alerts">
+                                    <div class="rb-container">
+                                        <ul class="rb addalertas">
+                                            <!-- <li class="rb-item" ng-repeat="itembx">
+                                                <div class="timestamp">
+                                                    Alerta de Disparos
+                                                </div>
+                                                <ion-icon class="location-button-policia waves-effect waves-light"
+                                                    name="navigate-circle"></ion-icon>
+                                                <div class="item-title">Disparos próximo a Occupation Avenue</div>
+
+                                            </li>
+                                            <li class="rb-item" ng-repeat="itembx">
+                                                <div class="timestamp">
+                                                    Alerta de Furto
+                                                </div>
+                                                <div class="item-title">Roubo de Veículo, T20 placa LXDS12</div>
+
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="paginapessoas" class="col s12">
+                            <div class="policia-pagina-content">
+                                <input class="person-search-input" type="text" spellcheck="false" placeholder="Nome da Pessoa" required>
+                                <div class="confirm-search-person-test" id="search-pers">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="person-search-results">
+                                    <div class="empty-search-message">Nenhum resultado</div>
+                                        <!-- <div class="person-search-result">
+                                            <div class="person-search-result-name">Name: Mayk Alexander</div>
+                                            <div class="person-search-result-bsn">SSN: 151asdf15a1sf51a1sdf</div> 
+                                        </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div id="paginaveiculo" class="col s12">
+                            <div class="policia-pagina-content">
+                                <input class="vehicle-search-input" type="text" placeholder="Placa do Veiculo" spellcheck="false" required>
+                                <div class="confirm-search-vehicle">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="scan-search-vehicle">
+                                    <i class="fas fa-barcode"></i>
+                                </div>
+                                <div class="vehicle-search-results">
+                                    <!-- <div class="vehicle-search-result">
+                                        <div class="vehicle-search-result-name">T20</div>
+                                        <div class="vehicle-search-result-plate">Placa do Veículo: NL123456</div>
+                                        <div class="vehicle-opensplit"></div> &nbsp; 
+                                        <div class="vehicle-search-result-owner">Dono: Jay Nandes</div>
+                                         &nbsp; <div class="vehicle-search-result-apk">APK: Ja</div>
+                                          <div class="vehicle-search-result-warrant">Busca e Apreensão: Ja</div>
+                                    </div>  -->
+                                </div>
+                            </div>
+                        </div>
+                        <div id="paginacasas" class="col s12">
+                            <div class="policia-pagina-content">
+                                <input class="person-search-input-house" type="text" placeholder="Nome do Proprietário" spellcheck="false" required>
+                                <div class="confirm-search-person-house">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="person-search-results">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="meos-tabs">
+                        <div class="meos-person-page">
+                            <input class="person-search-input" type="text" spellcheck="false" required>
+                            <div class="confirm-search-person-test" id="search-pers">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <div class="person-search-results">
+                            </div>
+                        </div>
+
+                        <div class="meos-houses-page">
+                            <input class="person-search-input-house" type="text" spellcheck="false" required>
+                            <div class="confirm-search-person-house">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <div class="person-search-results">
+
+                            </div>
+                        </div>
+
+                        <div class="meos-vehicle-page">
+                            <input class="vehicle-search-input" type="text" spellcheck="false" required>
+                            <div class="confirm-search-vehicle">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="scan-search-vehicle">
+                                <i class="fas fa-barcode"></i>
+                            </div>
+
+                            <div class="vehicle-search-results">
+                                <div class="vehicle-search-result"> <div class="vehicle-search-result-name">T20</div> <div class="vehicle-search-result-plate">Kenteken: NL123456</div> <div class="vehicle-opensplit"></div> &nbsp; <div class="vehicle-search-result-owner">Eigenaar: Jay Nandes</div> &nbsp; <div class="vehicle-search-result-apk">APK: Ja</div> <div class="vehicle-search-result-warrant">Gesignaleerd: Ja</div> </div>
+                            </div>
+                        </div>
+
+                        <div class="meos-alerts-page">
+                            <div class="meos-clear-alerts">CLEAR</div>
+                            <div class="meos-alerts">
+                                <div class="meos-alert"> <span class="meos-alert-new" style="margin-bottom: 1vh;">NIEUW</span>
+                                        <p class="meos-alert-type">Melding: Test</p>
+                                        <p class="meos-alert-description">Melding: Test</p>
+                                        <hr>
+                                        <div class="meos-location-button">LOCATION</div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="meos-tabs-footer">
+                                <i class="fas fa-undo-alt" id="back-meos"></i>
+                            </div>
+                    </div> -->
+
+
+                </div>
+
+                <div class="advert-app">
+                    <div class="advert-home">
+                        <div class="advert-header">
+                            <span id="advert-header-text">Rebay</span>
+                            <ion-icon class="advert-nonvo-anuncio" id="novo-anuncio" name="add"></ion-icon>
+                            <span id="advert-header-name"></span>
+                        </div>
+
+                        <div class="advert-list">
+                            <!-- <div class="phone-loading">
+                                    <div class="loadingio-spinner-ellipsis-t992hbzj7zr"><div class="ldio-0paeaa8xv3n">
+                                    <div></div><div></div><div></div><div></div><div></div>
+                                    </div></div>
+                                </div> -->
+
+                            <!-- <div class="advert waves-effect waves-light">
+                                    <div class="avatar-advert"></div>
+                                    <p>Dit is een test advert Dit is een test advert Dit is een test advert Dit is een test advert Dit is een test advert</p>
+                                    <div class="advert-sender">
+                                        <p>@JayNandes</p>
+                                        <ion-icon class="copiar-numero-celular tooltipped" name="call" data-position="top" data-tooltip="Copiar Número"></ion-icon>
+                                    </div> 
+                                </div> -->
+                        </div>
+
+                        <!-- <div class="test-slet">
+                                <i class="fas fa-plus test-icon"></i>
+                            </div> -->
+                    </div>
+
+                    <!-- <div class="new-advert">
+                            <div class="new-advert-header">
+                                <span id="new-advert-header-text">New Advertisement</span>
+                            </div>
+
+                            <textarea class="new-advert-textarea" spellcheck="false" required></textarea>
+
+
+                            <div class="new-advert-footer">
+                                <div class="new-advert-footer-item" id="new-advert-submit">
+                                    <i class="fas fa-check-circle new-advert-icon"></i>
+                                </div>
+                                <div class="new-advert-footer-item" id="new-advert-back">
+                                    <i class="fas fa-arrow-circle-left new-advert-icon"></i>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+
+                <div class="mail-app">
+                    <div class="inbox-app-header ">
+                        <span class="ajustes-titulo">Entrada</span>
+                        <input type="text" id="inbox-pesquisar-input" placeholder="Buscar" spellcheck="false">
+                    </div>
+                    <div class="mail-home">
+                        <!-- <div class="mail-header">
+                                <span id="mail-header-text">Inbox</span>
+                                <span id="mail-header-mail">elchapo@COA.net</span>
+                                <span id="mail-header-lastsync">Last Sync: 8:11</span>
+                            </div> -->
+                        <div class="mail-list">
+                            <div class="mail waves-effect waves-dark">
+                                <span class="mail-sender">Instagram</span>
+                                <div class="mail-text">
+                                    <p>
+                                        "Olá " .. gender .. " " .. charinfo.lastname .. ",Você foi multado pelo
+                                        Departamento de Policia de Reborn.<br />No valor de
+                                        <strong>$"..amount.."</strong> que foi descontado do seu
+                                        banco.<br />Atenciosamente.",
+                                    </p>
+                                </div>
+                                <div class="mail-time">21/03/2021 <i
+                                        class="material-icons dp48 email-seta-entrar">chevron_right</i></div>
+                            </div>
+                            <div class="mail waves-effect waves-dark">
+                                <span class="mail-sender">Apple</span>
+                                <div class="mail-text">
+                                    <p>This is a test mail and is therefore not fully displayed because that is what I
+                                        am testing</p>
+                                </div>
+                                <div class="mail-time">18:31</div>
+                            </div>
+                            <div class="mail waves-effect waves-dark">
+                                <span class="mail-sender">iPhone</span>
+                                <div class="mail-text">
+                                    <p>This is a test mail and is therefore not fully displayed because that is what I
+                                        am testing</p>
+                                </div>
+                                <div class="mail-time">18:31</div>
+                            </div>
+                            <div class="mail waves-effect waves-dark">
+                                <span class="mail-sender">Instagram</span>
+                                <div class="mail-text">
+                                    <p>This is a test mail and is therefore not fully displayed because that is what I
+                                        am testing</p>
+                                </div>
+                                <div class="mail-time">18:31</div>
+                            </div>
+                            <div class="mail waves-effect waves-dark">
+                                <span class="mail-sender">Instagram</span>
+                                <div class="mail-text">
+                                    <p>This is a test mail and is therefore not fully displayed because that is what I
+                                        am testing</p>
+                                </div>
+                                <div class="mail-time">18:31</div>
+                            </div>
+                            <div class="mail waves-effect waves-dark">
+                                <span class="mail-sender">Instagram</span>
+                                <div class="mail-text">
+                                    <p>This is a test mail and is therefore not fully displayed because that is what I
+                                        am testing</p>
+                                </div>
+                                <div class="mail-time">18:31</div>
+                            </div>
+                            <div class="mail waves-effect waves-dark">
+                                <span class="mail-sender">Instagram</span>
+                                <div class="mail-text">
+                                    <p>This is a test mail and is therefore not fully displayed because that is what I
+                                        am testing</p>
+                                </div>
+                                <div class="mail-time">18:31</div>
+                            </div>
+                            <div class="mail waves-effect waves-dark">
+                                <span class="mail-sender">Instagram</span>
+                                <div class="mail-text">
+                                    <p>
+                                        "Olá " .. gender .. " " .. charinfo.lastname .. ",Você foi multado pelo
+                                        Departamento de Policia de Reborn.<br />No valor de
+                                        <strong>$"..amount.."</strong> que foi descontado do seu
+                                        banco.<br />Atenciosamente.",
+                                    </p>
+                                </div>
+                                <div class="mail-time">18:31</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mail-footer">
+                        <div class="mail-footer-leftbuttom">
+                            <ion-icon name="filter-circle-outline"></ion-icon>
+                        </div>
+                        <div class="mail-footer-center">
+                            <span>Atualizado em</span>
+                            <span id="mail-header-lastsync">8:11</span>
+                        </div>
+                        <div class="mail-footer-rightbutton">
+                            <ion-icon name="create-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="opened-mail">
+                        <div class="opened-mail-header">
+                            <div class="mail-back"><i class="fas fa-chevron-left" id="mail-back"></i></div>
+                            <ion-icon class="mail-arrow-up" name="chevron-up"></ion-icon>
+                            <ion-icon class="mail-arrow-down" name="chevron-down"></ion-icon>
+                        </div>
+                        <div class="mail-info-inbox">
+                            <div class="mail-subject-area">
+                                <span class="mail-de">De: <strong class="mail-subject">Apple</strong></span>
+                                <span class="mail-de2">Para: <p class="mail-pessoa">maykgamerzz@reborn.com</p></span>
+                            </div>
+                            <div class="mail-firstletter-rounded">R</div>
+                        </div>
+
+
+                        <!-- <div class="mail-date"><p>July 28th 2020 &nbsp; 08:19</p></div> -->
+                        <div class="mail-spacing"></div>
+                        <div class="mail-content">
+                            <p>
+                                This is a test mail and is therefore not fully displayed because that is what I am
+                                testing.
+                                This is a test mail and is therefore not fully displayed because that is what I am
+                                testing.
+                                This is a test mail and is therefore not fully displayed because that is what I am
+                                testing.
+                            </p>
+                        </div>
+                        <div class="mail-date">
+                            <p>July 28th 2020 &nbsp; 08:19</p>
+                        </div>
+                        <div class="opened-mail-footer">
+                            <ion-icon class="mail-button-deletar" id="remove-mail" name="trash"></ion-icon>
+                            <ion-icon class="mail-button-lido" id="accept-mail" name="folder"></ion-icon>
+                            <!-- <div class="opened-mail-footer-item">
+                                    <i class="fas fa-check-circle" id="accept-mail"></i>
+                                </div>
+                                <div class="opened-mail-footer-item">
+                                    <i class="fas fa-trash-alt" id="remove-mail"></i>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="racing-app">
+                    <div class="racing-overview">
+                        <div class="racing-app-header">
+                            Racing - Overview
+                        </div>
+
+                        <div class="racing-races">
+                            <!-- <div class="racing-race">
+                                    <span class="race-name"><i class="fas fa-flag-checkered"></i> Prison</span>
+                                    <span class="race-track"><i class="fas fa-unlock"></i> Joinable</span>
+                                    <div class="race-infomation">
+                                        <div class="race-infomation-tab" id="race-information-laps">0 Laps</div>
+                                        <div class="race-infomation-tab" id="race-information-distance">0 m</div>
+                                        <div class="race-infomation-tab" id="race-information-player"><i class="fas fa-user"></i> 0</div>
+                                    </div>
+                                    <div class="race-buttons">
+                                        <div class="race-button" id="join-race" data-toggle="tooltip" data-placement="left" title="Join"><i class="fas fa-sign-in-alt"></i></div>
+                                        <div class="race-button" id="quit-race" data-toggle="tooltip" data-placement="right" title="Quit"><i class="fas fa-sign-out-alt"></i></div>
+                                    </div>
+                                </div> -->
+                            <!-- <div class="racing-race"> <span class="race-name"><i class="fas fa-flag-checkered"></i> Prison</span> <span class="race-track"><i class="fas fa-unlock"></i> Joinable</span> <div class="race-infomation"> <div class="race-infomation-tab" id="race-information-laps">0 Laps</div> <div class="race-infomation-tab" id="race-information-distance">0 m</div> <div class="race-infomation-tab" id="race-information-player"><i class="fas fa-user"></i> 0</div> </div> <div class="race-buttons"> <div class="race-button" id="join-race" data-toggle="tooltip" data-placement="left" title="Join"><i class="fas fa-sign-in-alt"></i></div> <div class="race-button" id="quit-race" data-toggle="tooltip" data-placement="right" title="Quit"><i class="fas fa-sign-out-alt"></i></div> </div> </div> -->
+                        </div>
+
+                        <div class="racing-buttons">
+                            <div class="racing-button" id="setup-race">
+                                <i class="fas fa-flag-checkered"></i> Setup
+                            </div>
+                            <div class="racing-button" id="leaderboards-race">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="racing-button" id="create-race">
+                                <i class="fas fa-plus"></i> Create
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="racing-setup">
+                        <div class="racing-app-header">
+                            Racing - Setup
+                        </div>
+
+                        <span id="racing-setup-trackheader">Race Track</span>
+                        <div class="dropdown">
+                            <div class="select">
+                                <span>Select a track</span>
+                                <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <input type="hidden" name="gender">
+                            <ul class="dropdown-menu"></ul>
+                        </div>
+
+                        <span id="racing-setup-lapsheader">Rounds</span>
+                        <input type="number" class="racing-setup-laps" required spellcheck="false"
+                            placeholder="NUMBER round's (0 is Sprint)">
+
+                        <span id="racing-setup-informationheader">Race Information</span>
+                        <div class="racing-setup-information-distance">Select a track</div>
+                        <div class="racing-setup-information-creator">Select a track</div>
+                        <div class="racing-setup-information-wr">Select a track</div>
+
+                        <div class="racing-setup-buttons">
+                            <div class="racing-setup-button" id="setup-race-accept" data-toggle="race-setup"
+                                data-placement="bottom" title="Accept">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="racing-setup-button" id="setup-race-cancel" data-toggle="race-setup"
+                                data-placement="bottom" title="Cancel">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="racing-create">
+                        <div class="racing-create-block">
+                            <span id="racing-create-tracknameheader">Track Name</span>
+                            <input type="text" class="racing-create-trackname" required spellcheck="false"
+                                placeholder="Name of your track">
+
+                            <div class="racing-create-buttons">
+                                <div class="racing-create-button" id="racing-create-accept">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="racing-create-button" id="racing-create-cancel">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="racing-leaderboard">
+                        <div class="racing-app-header">
+                            Racing - Leaderboards
+                        </div>
+
+                        <span id="racing-leaderboards-header">Latest Tracks</span>
+                        <div class="racing-leaderboards">
+                            <!-- <div class="racing-leaderboard-item">
+                                    <span class="racing-leaderboard-item-name"><i class="fas fa-flag-checkered"></i> Prison</span>
+                                    <span class="racing-leaderboard-item-info">Klik voor meer details</span>
+                                </div> -->
+                            <!-- <div class="racing-leaderboard-item"> <span class="racing-leaderboard-item-name"><i class="fas fa-flag-checkered"></i> Prison</span> <span class="racing-leaderboard-item-info">Klik voor meer details</span> </div> -->
+                        </div>
+
+                        <div class="racing-leaderboard-details">
+                            <div class="racing-leaderboard-details-block">
+                                <div class="racing-leaderboard-details-back"><i class="fas fa-times-circle"></i></div>
+                                <div class="racing-leaderboard-details-block-trackname"><i
+                                        class="fas fa-flag-checkered"></i> Prison</div>
+                                <span id="leaderboard-list-header"><span style="float: left;">Racer</span><span
+                                        style="margin-left: 5.55vh;"><i class="fas fa-stopwatch"></i></span><span
+                                        style="float: right; margin-right: 2vh;">#</span></span>
+                                <div class="racing-leaderboard-details-block-list">
+                                    <!-- <div class="row"> <div class="name">Jay Nandes</div><div class="time">00:04:55</div><div class="score">1</div> </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="racing-leaderboards-button">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="twitter-app">
+                    <div class="twitter-tab-header">
+                        <div class="twitter-tab-avatar"><span class="twitter-circle-blue"></span></div>
+                        <div class="twitter-tab-search">
+                            <input type="text" id="twitter-tab-search-input" placeholder="Pesquisar Tweet" spellcheck="false">
+                        </div>
+                        <div class="twitter-tab-config">
+                            <ion-icon name="refresh" id="atualizar-tweets"></ion-icon>
+                        </div>
+                    </div>
+                   
+                    <div class="twitter-home-tab">
+                        <!-- <div class="twitter-tweet" data-twthandler="@'+TwitterHandle.replace(" ", "_")+'">
+                            <div class="tweet-tweeter">Mayk Alexander &nbsp;<span>@MaykAlexander</span></div>
+                            <div class="tweet-message">@JAY fala ae galera testando o twitter</div>
+                            <div class="twt-img" style="top: 1.5vh;"><img src="https://www.gamasutra.com/db_area/images/news/2020/Feb/358422/bowling536.jpg" class="tweeter-image"></div>
+                            <div class="tweet-reply"><i class="far fa-comment"></i></div>
+                        </div> -->
+                       
+                       
+                        <div class="twitter-no-tweets">
+                            <p>Nenhum novo Tweet.</p>
+                        </div>
+                    </div>
+
+                    <div class="twitter-mentions-tab">
+                        <!-- <div class="twitter-mentioned-tweet"> 
+                            <div class="tweet-tweeter">Opa Galera &nbsp;<span>@MaykAlexander &middot; 2 m</span></div>
+                            <div class="tweet-message">xDxDxDxDxDxDxDxDxDxDxD. :) ggggggggggggggggggggggggggg gggggggggggggggggg</div>
+                            <div class="twt-img" style="top: 1.5vh;"><img src="https://www.gamasutra.com/db_area/images/news/2020/Feb/358422/bowling536.jpg" class="tweeter-image"></div>
+                        </div>
+                        <div class="twitter-mentioned-tweet"> 
+                            <div class="tweet-tweeter">Opa Galera &nbsp;<span>@MaykAlexander &middot; 2 m</span></div>
+                            <div class="tweet-message">xDxDxDxDxDxDxDxDxDxDxD. :) ggggggggggggggggggggggggggg gggggggggggggggggg</div>
+                            <div class="twt-img" style="top: 1.5vh;"><img src="https://www.gamasutra.com/db_area/images/news/2020/Feb/358422/bowling536.jpg" class="tweeter-image"></div>
+                        </div>
+                        <div class="twitter-mentioned-tweet"> 
+                            <div class="tweet-tweeter">Opa Galera &nbsp;<span>@MaykAlexander &middot; 2 m</span></div>
+                            <div class="tweet-message">xDxDxDxDxDxDxDxDxDxDxD. :) ggggggggggggggggggggggggggg gggggggggggggggggg</div>
+                            <div class="twt-img" style="top: 1.5vh;"><img src="https://www.gamasutra.com/db_area/images/news/2020/Feb/358422/bowling536.jpg" class="tweeter-image"></div>
+                        </div>
+                        <div class="twitter-mentioned-tweet"> 
+                            <div class="tweet-tweeter">Opa Galera &nbsp;<span>@MaykAlexander &middot; 2 m</span></div>
+                            <div class="tweet-message">xDxDxDxDxDxDxDxDxDxDxD. :) ggggggggggggggggggggggggggg gggggggggggggggggg</div>
+                            <div class="twt-img" style="top: 1.5vh;"><img src="https://www.gamasutra.com/db_area/images/news/2020/Feb/358422/bowling536.jpg" class="tweeter-image"></div>
+                        </div> -->
+                        
+                        <div class="twitter-no-tweets">
+                            <p>Você não foi mencionado ainda..</p>
+                        </div>
+                    </div>
+
+                    <div class="twitter-hashtags-tab">
+                        <div class="twitter-hashtag-tweets">
+                            <div class="twitter-tweet">
+                                <!-- <div class="tweet-tweeter">Test &nbsp;<span>@Test &middot; 2 m</span></div>
+                                    <div class="tweet-message">Dit is test tweet yeey. :) ggggggggggggggggggggggggggg gggggggggggggggggg</div>
+                                    <div class="twt-img" style="top: 1vh;"><img src="'+PictureUrl+'" class="tweeter-image"></div> -->
+                            </div>
+                        </div>
+                        <div class="twitter-hashtags">
+                            <!-- <div class="twitter-hashtag">
+                                <div class="twitter-hashtag-status">Estao falando sobre</div>
+                                <div class="twitter-hashtag-tag">#RebornRP</div>
+                                <div class="twitter-hashtag-messages">5 Tweets</div>
+                            </div>
+                            <div class="twitter-hashtag">
+                                <div class="twitter-hashtag-status">Estao falando sobre</div>
+                                <div class="twitter-hashtag-tag">#RebornRP</div>
+                                <div class="twitter-hashtag-messages">5 Tweets</div>
+                            </div>
+                            <div class="twitter-hashtag">
+                                <div class="twitter-hashtag-status">Estao falando sobre</div>
+                                <div class="twitter-hashtag-tag">#RebornRP</div>
+                                <div class="twitter-hashtag-messages">5 Tweets</div>
+                            </div>
+                            <div class="twitter-hashtag">
+                                <div class="twitter-hashtag-status">Estao falando sobre</div>
+                                <div class="twitter-hashtag-tag">#RebornRP</div>
+                                <div class="twitter-hashtag-messages">5 Tweets</div>
+                            </div> -->
+                            <div class="twitter-no-tweets">
+                                <p>Nenhuma Hashtag no momento..</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="twitter-new-tweet waves-effect waves-light">
+                        <i class="fas fa-feather-alt"></i>
+                        <div class="simbolo-de-mais">+</div>
+                    </div>
+
+                    <div class="twitter-new-tweet-tab">
+                        <textarea id="tweet-new-message" maxlength="280" placeholder="Oque você esta pensando?" cols="30" rows="10"
+                            spellcheck="false" required></textarea>
+                        
+                        <div class="quantidade-caractere"><quantidade class="caractere-count">0</quantidade>/280</div>
+                        <div class="tweet-container-buttons">
+                            <div class="tweet-button-cancelar tooltipped" data-position="bottom" data-tooltip="Cancelar" id="cancel-tweet">
+                                <ion-icon name="exit"></ion-icon>
+                            </div>
+                            <div class="tweet-button-tweetar tooltipped" data-position="bottom" data-tooltip="Tweetar" id="send-tweet">
+                                <i class="fas fa-feather-alt"></i>
+                            </div>
+                        </div>
+                        
+                            <!-- <div class="twitter-new-tweet-button" id="send-tweet">
+                                <p>Send</p>
+                            </div>
+                            <div class="twitter-new-tweet-button" id="cancel-tweet">
+                                <p>Cancel</p>
+                            </div> -->
+                    </div>
+
+                    <!-- <div class="twitter-header">
+                        <div id="twitter-home" data-twittertab="twitter-home"
+                            class="twitter-header-tab selected-twitter-header-tab"><i class="fas fa-home"></i></div>
+                        <div id="twitter-mentions" data-twittertab="twitter-mentions" class="twitter-header-tab"><i
+                                class="fas fa-at"></i></div>
+                        <div id="twitter-hashtags" data-twittertab="twitter-hashtags" class="twitter-header-tab"><i
+                                class="fas fa-hashtag"></i></div>
+                    </div> -->
+                    <div class="tabbar-bottom-twitter">
+                        <div id="twitter-home" data-twittertab="twitter-home"
+                        class="twitter-header-tab selected-twitter-header-tab"><i class="fas fa-home botaotabbar"></i></div>
+                    <div id="twitter-mentions" data-twittertab="twitter-mentions" class="twitter-header-tab other-tabbaritem">
+                        <i class="fas fa-at botaotabbar"></i>
+                    </div>
+                    <div id="twitter-hashtags" data-twittertab="twitter-hashtags" class="twitter-header-tab"><i
+                            class="fas fa-hashtag botaotabbar"></i></div>
+                    </div>
+                </div>
+
+                <div class="bank-app">
+                    <!-- <div class="bank-app-loading">
+                        <img src="../html/img/apps/bank-logo.png" class="qbank-logo">
+                        <span id="qbank-text">Bank</span>
+                    </div> -->
+                    <div class="bank-app-loaded">
+                        <div class="bank-app-header">
+                            
+                            <div class="banco-saldoatual">
+                                <span class="saldo-atual">$153,500.230</span>
+                                <span class="saldo-atual-desc">Saldo disponivel</span>
+                            </div>
+                            <!-- <div class="banco-notification-icon">
+                                <ion-icon name="notifications"></ion-icon>
+                                <div class="badge-notification"></div>
+                            </div> -->
+
+                            
+                            <div class="avatar-banco"></div>
+
+
+                            <!-- <div data-headertype="accounts"
+                                class="bank-app-header-button bank-app-header-button-selected"> <i
+                                    class="fas fa-align-left"></i>
+                                <p>Overview</p>
+                            </div>
+                            <div data-headertype="invoices" class="bank-app-header-button"> <i
+                                    class="fas fa-file-invoice"></i>
+                                <p>Invoices</p>
+                            </div> -->
+                        </div>
+
+                        <div class="bank-app-accounts">
+
+                            <div class="bank-home-container">
+
+                               <div class="transactions-recentes">
+                                   <span class="header-trans-container">Transações Recentes</span>
+                                   <div class="transactions-container-buttons">
+                                       <button class="trans-buttons waves-effect waves-dark" value="" id="filtro-todas-faturas">Todas</button>
+                                       <button class="trans-buttons waves-effect waves-dark" value="+ $" id="filtro-entradas">Entradas</button>
+                                       <button class="trans-buttons waves-effect waves-dark" value="- $" id="filtro-saidas">Saída</button>
+                                   </div>
+                                   <div class="transactions-list">
+                                        <!-- <div class="history-item">
+                                            <div class="history-item-type">
+                                                <ion-icon name="arrow-undo-outline"></ion-icon>
+                                            </div>
+                                            <div class="history-item-titulo">Fatura</div>
+                                            <div class="history-item-descricao">Reparo na mecanica</div>
+                                            <div class="history-item-valor">-$749.00</div>
+                                        </div> -->
+                                   </div>
+                               </div>
+                               <div class="faturas-container">
+                                    <span class="header-trans-container">Faturas Pendentes</span>
+                                    <div class="lista-de-faturas">
+                                        <!-- <div class="bank-app-invoice">
+                                            <div class="bank-app-invoice-title">Fatura#26</div>
+                                            <div class="invoice-sender-detail">Enviado por: <span class="sender-detail-name">Mayk</span></div>
+                                            <div class="invoice-detalhes">Tratamento Médico</div>
+                                            <div class="bank-app-invoice-amount">&#36; 5000,-</div>
+                                            <div class="bank-app-invoice-buttons">
+                                                 <i class="fas fa-check-circle pay-invoice"></i>
+                                                 <i class="fas fa-times-circle decline-invoice"></i>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="transf-container">
+                                    <span class="header-trans-container">Transferencia</span>
+                                    <div class="transf-container-inside">
+
+                                        <i class="bank-transfer-iban-icon fas fa-credit-card"></i>
+                                        <input type="text" id="bank-transfer-iban" class="bank-transfer-input" placeholder="Numero da Conta" required
+                                            spellcheck="false">
+
+                                        <i class="bank-transfer-amount-icon fas fa-dollar-sign"></i>
+                                        <input type="number" id="bank-transfer-amount" class="bank-transfer-input" placeholder="Valor" required
+                                            spellcheck="false">
+
+                                        <div class="bank-app-transfer-button waves-effect waves-light" id="accept-transfer">Transferir</div>
+                                    </div>
+                                </div>
+
+                                <div class="bank-profile-container">
+                                    <span class="header-trans-container">Detalhhes Bancários</span>
+                                    <div class="bank-profile-inside">
+                                        <div class="item-bank-perfil">
+                                            <div class="icone-item-bank">
+                                                <ion-icon name="people-outline"></ion-icon>
+                                            </div>
+                                            <div class="item-field-bank tooltipped" id="nome-titular-conta" data-position="top" data-tooltip="Titular da Conta">Mayk Alexander</div>
+                                        </div>
+                                        <div class="item-bank-perfil">
+                                            <div class="icone-item-bank">
+                                                <ion-icon name="information-outline"></ion-icon>
+                                            </div>
+                                            <div class="item-field-bank tooltipped" id="numero-conta-banco" data-position="bottom" data-tooltip="Número da Conta"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               <div class="bank-footer-container">
+                                   <button class="bank-fbutton waves-effect waves-dark" id="banco-pagina-home">
+                                       <i class="fas fa-home"></i>
+                                       <span class="button-name">Home</span>
+                                    </button>
+                                   <button class="bank-fbutton waves-effect waves-dark" id="banco-pagina-faturas">
+                                        <i class="fas fa-file-invoice-dollar"></i>
+                                        <span class="button-name">Faturas</span>
+                                    </button>
+                                   <button class="bank-fbutton waves-effect waves-dark" id="banco-pagina-transf">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span class="button-name">Transf</span>
+                                   </button>
+                                   <button class="bank-fbutton waves-effect waves-dark" id="banco-pagina-perfil">
+                                        <i class="fas fa-user"></i>
+                                        <span class="button-name">Perfil</span>
+                                   </button>
+                               </div>
+                            </div>
+                          
+                        </div>
+
+                          <!-- <div class="bank-app-account">
+                                <div class="bank-app-account-title">Payment Account</div>
+                                <div class="bank-app-account-number" id="iban-account">NL01QBBA012341234123</div>
+                                <input type="text" class="bank-app-account-number" id="iban-account" readonly
+                                    spellcheck="false">
+                                <div class="bank-app-account-balance">&#36; 5000.00</div>
+                            </div> -->
+
+                            <!-- <div class="bank-app-account-actions">
+                                <i id="transfer-money" class="fas fa-exchange-alt bank-app-account-action-transfer"></i>
+                            </div> -->
+
+                        <div class="bank-app-transfer">
+                            <div class="bank-app-transfer-header">Transfer Money</div>
+
+                            <i class="bank-transfer-iban-icon fas fa-credit-card"></i>
+                            <input type="text" id="bank-transfer-iban" class="bank-transfer-input" required
+                                spellcheck="false">
+                            <i class="bank-transfer-mycontacts-icon fas fa-address-book"></i>
+
+                            <i class="bank-transfer-amount-icon fas fa-dollar-sign"></i>
+                            <input type="number" id="bank-transfer-amount" class="bank-transfer-input" required
+                                spellcheck="false">
+
+                            <div class="bank-app-transfer-buttons">
+                                <div class="bank-app-transfer-button" id="accept-transfer">Transfer</div>
+                                <div class="bank-app-transfer-button" id="cancel-transfer">Cancel</div>
+                            </div>
+                        </div>
+
+                        <div class="bank-app-invoices">
+                            <div class="bank-app-invoices-list">
+                                <div class="bank-app-invoice"> <div class="bank-app-invoice-title">Betaalverzoek <span style="font-size: 1vh; color: gray;">(Afzender: 0612345678)</span></div> <div class="bank-app-invoice-amount">&#36; 5000,-</div> <div class="bank-app-invoice-buttons"> <i class="fas fa-check-circle pay-invoice"></i> <i class="fas fa-times-circle decline-invoice"></i> </div> </div>
+                                <div class="bank-app-invoice"> <div class="bank-app-invoice-title">Betaalverzoek <span style="font-size: 1vh; color: gray;">(Afzender: 0612345678)</span></div> <div class="bank-app-invoice-amount">&#36; 5000,-</div> <div class="bank-app-invoice-buttons"> <i class="fas fa-check-circle pay-invoice"></i> <i class="fas fa-times-circle decline-invoice"></i> </div> </div>
+                                <div class="bank-app-invoice"> <div class="bank-app-invoice-title">Betaalverzoek <span style="font-size: 1vh; color: gray;">(Afzender: 0612345678)</span></div> <div class="bank-app-invoice-amount">&#36; 5000,-</div> <div class="bank-app-invoice-buttons"> <i class="fas fa-check-circle pay-invoice"></i> <i class="fas fa-times-circle decline-invoice"></i> </div> </div>
+                                <div class="bank-app-invoice"> <div class="bank-app-invoice-title">Betaalverzoek <span style="font-size: 1vh; color: gray;">(Afzender: 0612345678)</span></div> <div class="bank-app-invoice-amount">&#36; 5000,-</div> <div class="bank-app-invoice-buttons"> <i class="fas fa-check-circle pay-invoice"></i> <i class="fas fa-times-circle decline-invoice"></i> </div> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bank-app-my-contacts">
+                        <div class="bank-app-my-contacts-header">My Contacts</div>
+                        <div class="bank-app-my-contacts-list-header">
+                            <input type="text" id="bank-app-my-contact-search" placeholder="Contact name"
+                                spellcheck="false">
+                        </div>
+                        <div class="bank-app-my-contacts-list">
+                            <!-- <div class="bank-app-my-contact"> <div class="bank-app-my-contact-firstletter">P</div> <div class="bank-app-my-contact-name">Pieter Post</div> </div> -->
+                        </div>
+                        <div class="bank-app-my-contacts-list-back">Back</div>
+                    </div>
+                </div>
+
+                <div class="whatsapp-app">
+                    <div class="whatsapp-header">
+                        <div class="whatsapp-header-top"></div>
+                        <div class="whatsapp-header-footer">
+                            <p>Mensagens</p>
+
+                            <input type="text" id="whatsapp-search-input" placeholder="Buscar" spellcheck="false">
+                            <!-- <i class="fas fa-search"></i>
+                                <input type="text" id="whatsapp-search-input" placeholder="Buscar" spellcheck="false"> -->
+                        </div>
+
+                    </div>
+                    <div class="whatsapp-chats">
+
+                        <!-- <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url('https://s2.glbimg.com/iE9wE9lni7B8UA0OCGizEzpNH6E=/0x0:2115x1405/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/Q/s/Si3PO2TdGrIYeVpXZ1FA/2020-05-09t000000z-1874358627-rc25lg9vwuf5-rtrmadp-3-health-coronavirus-tesla.jpg');"></div>
+                                <div class="whatsapp-chat-name"><p>Mayk Alexander</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-unreadmessages"><p>12</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://blog.unyleya.edu.br/wp-content/uploads/2017/12/saiba-como-a-educacao-ajuda-voce-a-ser-uma-pessoa-melhor.jpeg);"></div>
+                                <div class="whatsapp-chat-name"><p>Maria Eduarda</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://vilamulher.com.br/imagens/thumbs/2014/11/10/4-razoes-para-ser-uma-pessoa-mais-curiosa-thumb-570.jpg);"></div>
+                                <div class="whatsapp-chat-name"><p>Leona</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://media.gazetadopovo.com.br/2020/10/17182055/Dr.-Pessoa-MDB-497x372.jpg);"></div>
+                                <div class="whatsapp-chat-name"><p>Demonio</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0vQRYDGU7ynMnTxXCl3QY5CLWNpGPkbg1Hg&usqp=CAU);"></div>
+                                <div class="whatsapp-chat-name"><p>Plinio Londs</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0vQRYDGU7ynMnTxXCl3QY5CLWNpGPkbg1Hg&usqp=CAU);"></div>
+                                <div class="whatsapp-chat-name"><p>Plinio Londs</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0vQRYDGU7ynMnTxXCl3QY5CLWNpGPkbg1Hg&usqp=CAU);"></div>
+                                <div class="whatsapp-chat-name"><p>Plinio Londs</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0vQRYDGU7ynMnTxXCl3QY5CLWNpGPkbg1Hg&usqp=CAU);"></div>
+                                <div class="whatsapp-chat-name"><p>Plinio Londs</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://www.revistaplaneta.com.br/wp-content/uploads/sites/3/2017/05/15_pl530_pessoa.jpg);"></div>
+                                <div class="whatsapp-chat-name"><p>Reborn Roleplay</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://www.revistaplaneta.com.br/wp-content/uploads/sites/3/2017/05/15_pl530_pessoa.jpg);"></div>
+                                <div class="whatsapp-chat-name"><p>Reborn Roleplay</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://www.revistaplaneta.com.br/wp-content/uploads/sites/3/2017/05/15_pl530_pessoa.jpg);"></div>
+                                <div class="whatsapp-chat-name"><p>Reborn Roleplay</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://www.revistaplaneta.com.br/wp-content/uploads/sites/3/2017/05/15_pl530_pessoa.jpg);"></div>
+                                <div class="whatsapp-chat-name"><p>Reborn Roleplay</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div> 
+                            <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture" style="background-image: url(https://www.revistaplaneta.com.br/wp-content/uploads/sites/3/2017/05/15_pl530_pessoa.jpg);"></div>
+                                <div class="whatsapp-chat-name"><p>Reborn Roleplay</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>Ultima mensagem exemplo para teste</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>12:00</p></div>
+                            </div>  -->
+
+                    </div>
+                    <div class="whatsapp-openedchat">
+                        <div class="whatsapp-header-openedchat">
+                            <div class="whatsapp-header-top-openedchat"></div>
+                            <div class="whatsapp-header-footer-openedchat">
+                                <div class="whatsapp-openedchat-picture waves-effect waves-light"></div>
+                                <div class="whatsapp-openedchat-status"></div>
+                                <i id="whatsapp-openedchat-back">
+
+                                    <i class="material-icons dp48 voltar-icone">chevron_left</i>
+                                </i>
+                            </div>
+                            <a class='opcoes-chat dropdown-trigger btn' href='#' data-target='dropdown1'>
+                                <i class="icone-opcoes fas fa-ellipsis-v waves-effect waves-light"></i>
+                            </a>
+
+                            <!-- Dropdown Structure -->
+
+                            <ul id='dropdown1' class='opcoes-list dropdown-content'>
+                                <li class="opcao-menu-dropdown tooltipped waves-effect waves-light" data-position="left"
+                                    data-tooltip="Enviar localização" id="send-location"><a href="#!"><i
+                                            class="opcoes-list-icone fas fa-map-marker-alt"></i></a></li>
+                                <li class="opcao-menu-dropdown tooltipped waves-effect waves-light modal-trigger"
+                                    data-position="left" data-tooltip="Enviar foto" href="#modal1"><a><i
+                                            class="opcoes-list-icone fas fa-images"></i></a></li>
+                                <li class="opcao-menu-dropdown tooltipped waves-effect waves-light" data-position="left"
+                                    data-tooltip="Ligar"><a href="#!"><i
+                                            class="opcoes-list-icone fas fa-phone-alt"></i></a></li>
+                            </ul>
+                            <div id="modal1" class="modal enviar-imagem-box">
+                                <div class="image-send-container">
+                                    <input class="image-sender-input" id="imagem-url-send" type="text"
+                                        placeholder="Link da imagem">
+                                    <i class="fas fa-arrow-up modal-close waves-effect waves-light"
+                                        id="send-imagem-botao"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="whatsapp-openedchat-messages">
+
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-other">Hey! Have any
+                                good song sggestions?
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-other">Testeteste
+                                testehahahahah ahahahhaha hahaha
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-me">Testeteste teste
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-other">Testeteste
+                                testehahahahah ahahahhaha hahaha
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-me">Testeteste
+                                testehahahahah ahahahhaha hahaha
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-other">Testeteste teste
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-other">Testeteste
+                                testehahahahah ahahahhaha hahaha
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-me">Testeteste teste
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-other">Testeteste
+                                testehahahahah ahahahhaha hahaha
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-me">Testeteste
+                                testehahahahah ahahahhaha hahaha
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-other">Testeteste teste
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-other">Testeteste
+                                testehahahahah ahahahhaha hahaha
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-me">Testeteste teste
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-other">Testeteste
+                                testehahahahah ahahahhaha hahaha
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="whatsapp-openedchat-message whatsapp-openedchat-message-me">Testeteste
+                                testehahahahah ahahahhaha hahaha
+                                <!-- <div class="whatsapp-openedchat-message-time">12:00</div> -->
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </div>
+
+                        <div class="whatsapp-openedchat-input">
+                            <!-- <div class="whatsapp-extra-buttons">
+                                    <div class="whatsapp-extra-button" id="send-location"><i class="fas fa-map-marker-alt"></i></div>
+                                </div> -->
+                            <!-- <p class="camera-icon-place"><i class="fas fa-camera"></i></p> -->
+                            <input type="text" id="whatsapp-openedchat-message" placeholder="Mensagem"
+                                spellcheck="false">
+                            <i class="fas fa-arrow-up waves-effect waves-light" id="whatsapp-openedchat-send"></i>
+                            <!-- <i class="fas fa-arrow-up"></i> -->
+                            <!-- <i class="fas fa-map-marker-alt" id="whatsapp-openedchat-message-extras"></i> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="trabalhar-app">
+                    <div class="trabalhar-container">
+                        <div class="trabalhar-loading">
+                            <div class="loadingio-spinner-ellipsis-t992hbzj7zr">
+                                <div class="ldio-0paeaa8xv3n">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trabalhar-leader-info">
+                            <span class="leader-nome">nome do lider</span>
+                            <span class="job-cargo">cargo</span>
+                        </div>
+                        <div class="membro-grupo" id="slot1">
+                            <span class="membro-nome" id="slotname1">Slot Vazio</span>
+                            <span class="membro-cargo" id="slotcargo1"></span>
+                        </div>
+                        <div class="membro-grupo" id="slot2">
+                            <span class="membro-nome" id="slotname2">Slot Vazio</span>
+                            <span class="membro-cargo" id="slotcargo2"></span>
+                        </div>
+                        <div class="membro-grupo" id="slot3">
+                            <span class="membro-nome" id="slotname3">Slot Vazio</span>
+                            <span class="membro-cargo" id="slotcargo3"></span>
+                        </div>
+                        <div class="trabalhar-button" id="criar-grupo">Criar um Grupo</div>
+                        <div class="trabalhar-button" id="procurar-grupo">Procurar um Grupo</div>
+                    </div>
+                </div>
+                <!-- <div class="instagram-app"> -->
+                    <!-- <iframe class="instagram-embed-location" src="http://26.143.92.227:8080/instagram/" height="100%" width="250" allowfullscreen="" frameborder="0"></iframe> -->
+                <!-- </div> -->
+            </div>
+
+            <div class="phone-currentcall-container">
+                <div class="phone-currentcall-icon"><i class="fas fa-phone"></i></div>
+                <div class="phone-currentcall-title">Outgoing call</div>
+                <div class="phone-currentcall-contact">with 0612345678</div>
+            </div>
+
+            <!-- Phone Home Button -->
+            <div class="phone-footer">
+                <div class="phone-home-container">
+                    <div class="phone-home-button"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="screen-notifications-container">
+        <div class="screen-notification-icon"><i class="fab fa-twitter"></i></div>
+        <div class="screen-notification-title">
+            <p>New Tweet!</p>
+        </div>
+        <div class="screen-notification-content">
+            <p>This is a test notification JOINK </p>
+        </div>
+    </div>
+
+    <div class="call-notifications">
+        <div class="call-notifications-icon"><i class="fas fa-exclamation-triangle"></i></div>
+        <div class="call-notifications-title">
+            <p>Incoming Call</p>
+        </div>
+        <div class="call-notifications-content">
+            <p>You have an incoming call from Test</p>
+        </div>
+    </div>
+
+    <!-- <div class="emergency-button">
+            <div class="emergency-button-header">
+                <img src="./img/politie-2.png" class="police-logo-2">
+            </div>
+            <div class="emergency-button-footer">
+                <img src="./img/politie-3.png" class="police-logo-3">
+            </div>
+        </div> -->
+
+    <!-- JavaScript File's -->
+    <div id="play_notify_hidden">
+
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <!-- <script src="./js/jquery.gridly.js"></script> -->
+    <script src="./js/config.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/settings.js"></script>
+    <script src="./js/phone.js"></script>
+    <script src="./js/twitter.js"></script>
+    <script src="./js/bank.js"></script>
+    <script src="./js/whatsapp.js"></script>
+    <script src="./js/garage.js"></script>
+    <script src="./js/mail.js"></script>
+    <script src="./js/meos.js"></script>
+    <script src="./js/crypto.js"></script>
+    <script src="./js/racing.js"></script>
+    <script src="./js/houses.js"></script>
+    <script src="./js/lawyers.js"></script>
+    <script src="./js/trabalhar.js"></script>
+    
+</body>
+
+</html>

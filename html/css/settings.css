@@ -1,0 +1,1001 @@
+#ajuestes-pesquisar-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #8B8C8E !important;
+    opacity: 1; /* Firefox */
+  }
+
+  #ajuestes-pesquisar-input:focus{
+      border-bottom: 0 !important;
+      box-shadow: none !important;
+  }
+
+.custom-background-input:focus{
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+.custom-background-input{
+    border-bottom: none !important;  
+}
+.settings-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #F0EFF4;
+    overflow: hidden;
+}
+
+.settings-app-header {
+    position: relative;
+    height: 14vh;
+    left: 0vh;
+    top: 1vh;
+    border: 1px solid #BABABC;
+    background-color: #F7F7F7;
+}
+.ajustes-titulo{
+    position: relative;
+    font-size: 3.0vh;
+    text-align: left;
+    font-weight: bolder;
+    color: black;
+    top: 4vh;
+    left: 2vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.setinha-ajustar-background{
+    position: relative;
+    left: 4vh;
+    bottom: 1.9vh;
+}
+
+#ajuestes-pesquisar-input {
+    position: relative;
+    border: none;
+    background: #E4E4E6;
+    height: 3.5vh;
+    background-image: url(../img/search.png);
+    background-size: 2vh;
+    background-repeat: no-repeat;
+    background-position: 0.5vh;
+    border-radius: 1vh;
+    box-shadow: 0 0 0.2vh 0 rgba(0, 0, 0, 0.281);
+    font-family: 'Roboto';
+    outline: none;
+    top: 4.8vh;
+    width: 86%;
+    left: 1.8vh;
+    color: #8B8C8E !important;
+    text-indent: 3vh;
+    font-size: 1.3vh;
+}
+.reborn-id-phonearea{
+    position: relative;
+    top: 4vh;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.8vh;
+    background-color: white;
+    border-top: 1px solid #E2E1E6;
+    border-bottom: 1px solid #E2E1E6;
+}
+.reborn-phone-container{
+    position: relative;
+    top: 6vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.8vh;
+    background-color: white;
+    border-top: 1px solid #E2E1E6;
+    border-bottom: 1px solid #E2E1E6;
+}
+.reborn-phone-container-other{
+    position: relative;
+    top: 3vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.8vh;
+    background-color: white;
+    border-top: 1px solid #E2E1E6;
+    border-bottom: 1px solid #E2E1E6;
+}
+
+.profile-phone{
+    position: relative;
+    width: 100%;
+    height: 6vh;
+    transition: .15s;
+}
+.ajustes-item{
+    position: relative;
+    display: flex;
+    width: 95%;
+    height: 3.7vh;
+    left: 0.6vh;
+    transition: .15s;
+}
+.ajustes-item:before{
+    content: "";
+    position: absolute;
+    left: 6vh;
+    bottom: 0;
+    height: 1px;
+    width: 75%;
+    border-bottom: 1px solid #D9D9D9;
+}
+.ajustes-items-other{
+    position: relative;
+    display: flex;
+    width: 95%;
+    min-height: 3.7vh;
+    left: 0.6vh;
+    transition: .15s;
+}
+border{
+    position: absolute;
+    width: 51vh;
+    height: 0.2vh;
+    border: 0;
+    top: 2.6vh;
+    left: 2vh;
+    background-color: #CCCBD0;
+}
+.background-change-ios{
+    bottom: 1vh;
+    height: 3.5vh;
+    line-height: 3.6vh;
+    text-indent: 2vh;
+    width: 26vh !important;
+}
+.background-change-ios:after{
+    content: '';
+    position: absolute;
+    background-color: #c4c4c4;
+    display: block;
+    z-index: 15;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 2vh;
+    height: 0.1vh;
+    width: 100%;
+    transform-origin: 50% 100%;
+    transform: scaleY(calc(1 / var(--f7-device-pixel-ratio)));
+}
+
+
+.ios-separator-name{
+    position: relative;
+    height: 2.2vh;
+    width: 93%;
+    left: 0.8vh;
+    top: 3vh;
+    font-size: 1.5vh;
+    font-variant-caps: all-small-caps;
+    color: #6D6C71;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.ios-separator-name span{
+    position: relative;
+    left: 1.4vh;
+}
+.change-background i{
+    position: relative;
+    font-size: 2.5vh;
+    left: 4.5vh;
+    top: 7vh;
+}
+
+.ios-separator-name-bottom{
+    position: relative;
+    height: 2.2vh;
+    width: 93%;
+    left: 0.8vh;
+    top: 1.5vh;
+    font-size: 1.24vh;
+    color: #6D6C71;
+    font-family: Arial;
+}
+.ios-separator-name-bottom span{
+    position: relative;
+    left: 1.4vh;
+}
+
+.ajustes-item-nome{
+    position: absolute;
+    top: 0.8vh;
+    left: 6vh;
+    font-weight: 500;
+    font-size: 1.3vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.item-nome-secundario{
+    position: absolute;
+    top: 0vh;
+    left: 6vh;
+    color: #919193;
+    text-align: right;
+    width: 12vh;
+}
+.ajustes-planode-fundo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1vh 2vh;
+}
+.ajustes-atual-background{
+    width: 50%;
+    height: 19vh;
+    background-color: #eeeeee;
+    margin-right: 0.5vh;
+    background-size: cover;
+}
+.ajustes-change-background{
+    width: 50%;
+    height: 19vh;
+    background-color: #eeeeee;
+    background-size: cover;
+}
+.profile-phone:before{
+    content: "";
+    position: absolute;
+    left: 6vh;
+    bottom: 0;
+    height: 1px;
+    width: 75%;
+    border-bottom: 1px solid #D9D9D9;
+}
+.profile-phone-foto{
+    position: absolute;
+    height: 4.4vh;
+    width: 4.4vh;
+    border-radius: 50%;
+    top: 0.9vh;
+    left: 1.6vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/default.png);
+}
+.profile-phone-nome{
+    position: absolute;
+    top: 1.10vh;
+    left: 6.5vh;
+    font-size: 1.5vh;
+    color: #0B0B0B;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.profile-phone-contas{
+    position: absolute;
+    top: 3.2vh;
+    left: 6.5vh;
+    font-size: 1.06vh;
+    color: #000000;
+    max-width: 17vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.profile-phone-setinha{
+    position: absolute;
+    top: 1.50vh;
+    right: 0.6vh;
+    font-family: unset;
+    color: #868688;
+}
+.profile-seta-custom{
+    font-size: 2.7vh !important;
+}
+
+.settings-app-tab-appereance {
+    position: absolute;
+    top: 16vh;
+    height: 81%;
+    width: 100%;
+}
+
+.settings-app-tab-information {
+    position: absolute;
+    top: 30vh;
+    height: 100%;
+    width: 100%;
+}
+
+.settings-app-tab {
+    position: relative;
+    width: 100%;
+    height: 6vh;
+    margin: 0 auto;
+    transition: all .1s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+}
+
+.settings-app-tab:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+.Settings-categoria{
+    position: relative;
+    width: 20vh;
+    text-align: left;
+    left: 1.7vh;
+    font-family: 'Roboto';
+    font-weight: 600;
+    top: 0.5vh;
+}
+.settings-app-tab-header {
+    position: relative;
+    top: 1vh;
+    left: 0;
+    height: 3.6vh;
+    font-family: 'Roboto';
+    font-size: 1.5vh;
+    width: 100%;
+    display: flex;
+    margin-bottom: 0.4vh;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.settings-app-tab-header:hover{
+    background-color: rgb(221, 221, 221);
+    transition: all 0.3s;
+}
+.icon-tab{
+    color: #518fff;
+    position: relative;
+    left: 2vh;
+    width: 2.3vh;
+    height: 1.8vh;
+    text-align: center;
+    top: 1vh;
+}
+.option-settings-txt{
+    position: relative;
+    left: 2.8vh;
+    top: 0.7vh;
+}
+.settings-app-tab-header > p {
+    padding-left: 1vh;
+}
+
+.settings-tab-icon {
+    position: absolute;
+    left: 2vh;
+    top: 1.5vh;
+    font-size: 2.3vh;
+}
+
+.settings-tab-icon > img {
+    position: absolute;
+    width: 3.3vh;
+    height: 3.3vh;
+    border-radius: 50%;
+    box-shadow: 0 0 .5vh 0 rgba(0, 0, 0, 0.05);
+    margin-left: -.3vh;
+}
+
+.settings-tab-title {
+    position: absolute;
+    left: 6.2vh;
+    top: 1.2vh;
+    font-size: 1.3vh;
+    font-family: 'Samsung Sans Medium';
+}
+
+.settings-tab-description {
+    position: absolute;
+    right: 1.0vh;
+    top: 1vh;
+    width: 9vh;
+    text-align: left;
+    font-size: 1.2vh;
+    font-family: 'Roboto';
+    color: rgba(0, 0, 0, 0.65);
+    height: 1.9vh;
+}
+
+.settings-background-tab {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 30vh;
+    right: 0;
+    z-index: 1;
+    background: #F0EFF4;
+}
+.tab-header-ios{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 1vh;
+    width: 26vh;
+    height: 6vh;
+    left: 0.5vh;
+    background-color: white;
+    border: 1px solid #BABABC;
+}
+
+.ios-tabheader-name{
+    position: relative;
+    top: 2.5vh;
+    font-size: 1.5vh;
+    right: 1.8vh;
+    width: 14vh;
+    height: 3vh;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.tab-buttons-container{
+    font-size: 1.1vh;
+    padding: 0 !important;
+}
+.tab-status{
+    width: 27vh;
+    height: 5.5vh;
+}
+.tab-icon-size{
+    width: 3vh;
+    top: 0.4vh;
+}
+.tab-label-size{
+    width: 5vh;
+    margin-left: 0.4vh;
+}
+#ios-voltar-menu{
+    position: relative;
+    color: #0C73E9;
+    top: 1.5vh;
+    right: 3.9vh;
+    font-size: 4vh;
+    transition: all 0.3s;
+}
+
+#ios-voltar-menu:hover{
+    color: #7fb7f7;
+    transition: all 0.3s;
+}
+.ios-nome-voltar{
+    position: absolute;
+    top: 0.5vh;
+    left: 2.3vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.ajustes-item-other{
+    position: relative;
+    left: 0;
+    top: 0.8vh;
+    font-weight: 640;
+    width: 22vh;
+    font-size: 1.35vh;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.settings-profilepicture-tab {
+    display: block;
+    position: absolute;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(230, 230, 230);
+}
+
+.background-options {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 13vh;
+}
+
+.background-option {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    background-color: rgb(223, 223, 223);
+}
+
+.background-option-icon {
+    position: absolute;
+    height: 100%;
+    width: 6vh;
+    text-align: center;
+    line-height: 7vh;
+    font-size: 2.3vh;
+    color: #fbc531;
+}
+
+.background-option-title {
+    position: absolute;
+    left: 6vh;
+    top: 1.5vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303;
+    font-size: 1.3vh;
+    font-family: 'Samsung Sans Medium';
+}
+
+.background-option-description {
+    position: absolute;
+    left: 6vh;
+    top: 3.6vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303b9;
+    font-size: 1.1vh;
+    font-family: 'Samsung Sans Regular';
+}
+
+.background-option-current {
+    position: absolute;
+    right: 3vh;
+    top: 2.5vh;
+    text-align: center;
+    font-size: 1.6vh;
+    color: #030303b9;
+    font-family: 'Samsung Sans Regular';
+}
+
+.background-buttons {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+}
+
+.background-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.7vh;
+    color: black;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.5vh;
+    transition: .05s;
+    border-top: 2px solid #e8421800;
+}
+
+.background-button:hover {
+    background-color: #dadbdb;
+    border-top: 2px solid #e84118;
+}
+
+.background-custom {
+    display: none;
+    position: absolute;
+    height: 25.5%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.897);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -23vh;
+    border-radius: 2vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.background-custom-title {
+    font-family: 'Samsung Sans Bold';
+    padding: 2vh;
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.custom-background-input {
+    position: absolute;
+    left: 1vh;
+    background: none;
+    border: none;
+    outline: none;
+    height: 3.5vh;
+    width: 21vh;
+    font-family: 'Samsung Sans Regular';
+    background: #E4E4E6;
+    border-radius: 2vh;
+    text-align: center;
+}
+
+.custom-background-input::placeholder {
+    text-align: center;
+}
+
+.background-custom-buttons {
+    position: absolute;
+    bottom: 0vh;
+    width: 100%;
+    height: 5vh;
+}
+
+.custom-background-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.1vh;
+    color: black;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.5vh;
+    transition: all 0.3s;
+    border-bottom: 2px solid #e8421800;
+}
+
+.custom-background-button:hover {
+    background-color: #92929263;
+    transition: all 0.3s;
+}
+
+
+.profilepicture-options {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 13vh;
+}
+
+.profilepicture-option {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    background-color: rgb(223, 223, 223);
+}
+
+.profilepicture-option-icon {
+    position: absolute;
+    height: 100%;
+    width: 6vh;
+    text-align: center;
+    line-height: 7vh;
+    font-size: 2.3vh;
+    color: #fbc531;
+}
+
+.profilepicture-option-title {
+    position: absolute;
+    left: 6vh;
+    top: 1.5vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303;
+    font-size: 1.3vh;
+    font-family: 'Samsung Sans Medium';
+}
+
+.profilepicture-option-description {
+    position: absolute;
+    left: 6vh;
+    top: 3.6vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #030303b9;
+    font-size: 1.1vh;
+    font-family: 'Samsung Sans Regular';
+}
+
+.profilepicture-option-current {
+    position: absolute;
+    right: 3vh;
+    top: 2.5vh;
+    text-align: center;
+    font-size: 1.6vh;
+    color: #030303b9;
+    font-family: 'Samsung Sans Regular';
+}
+
+.profilepicture-buttons {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+}
+
+.profilepicture-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.7vh;
+    color: black;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.5vh;
+    transition: .05s;
+    border-top: 2px solid #e8421800;
+}
+
+.profilepicture-button:hover {
+    background-color: #dadbdb;
+    border-top: 2px solid #e84118;
+}
+
+.profilepicture-custom {
+    display: none;
+    position: absolute;
+    height: 40%;
+    width: 80%;
+    background-color: rgb(245, 245, 245);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.247);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -23vh;
+    border-radius: 2vh;
+    overflow: hidden;
+}
+
+.profilepicture-custom-title {
+    font-family: 'Samsung Sans Bold';
+    padding: 2vh;
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.custom-profilepicture-input {
+    position: absolute;
+    left: 1vh;
+    /* profilepicture: none; */
+    border: none;
+    outline: none;
+    height: 3.5vh;
+    width: 21vh;
+    font-family: 'Samsung Sans Regular';
+    /* profilepicture: rgb(235, 235, 235); */
+    border-radius: 2vh;
+    text-align: center;
+}
+
+.custom-profilepicture-input::placeholder {
+    text-align: center;
+}
+
+.profilepicture-custom-buttons {
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    height: 5vh;
+}
+
+.custom-profilepicture-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.1vh;
+    color: black;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.5vh;
+    transition: .08s;
+    border-bottom: 2px solid #e8421800;
+}
+
+.custom-profilepicture-button:hover {
+    background-color: #dadbdb65;
+    border-bottom: 2px solid #e84118;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    /* display: inline-block; */
+    width: 50px;
+    height: 24px;
+    top: 50%;
+    right: 2vh;
+    transform: translateY(-50%);
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 24px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.anonimo-icone{
+    position: relative;
+    background-color: orange;
+    width: 2.9vh;
+    height: 2.6vh;
+    text-align: center;
+    border-radius: 0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    line-height: 2.6vh;
+    margin-top: 0.5vh;
+    font-size: 1.4vh;
+    color: white;
+}
+.wifi-icone{
+    position: relative;
+    background-color: rgb(29, 94, 235);
+    width: 2.9vh;
+    height: 2.6vh;
+    text-align: center;
+    border-radius: 0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    line-height: 2.6vh;
+    margin-top: 0.5vh;
+    font-size: 1.4vh;
+    color: white;
+}
+.bluetooth-icone{
+    position: relative;
+    background-color: rgb(29, 94, 235);
+    width: 2.9vh;
+    height: 2.6vh;
+    text-align: center;
+    border-radius: 0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    line-height: 2.6vh;
+    margin-top: 0.5vh;
+    font-size: 1.7vh;
+    color: white;
+}
+.sinalcelular-icone{
+    position: relative;
+    background-color: #4FD866;
+    width: 2.9vh;
+    height: 2.6vh;
+    text-align: center;
+    border-radius: 0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    line-height: 2.6vh;
+    margin-top: 0.5vh;
+    font-size: 1.4vh;
+    color: white;
+}
+.planodefundo-icone{
+    position: relative;
+    background-color: #29A7E4;
+    width: 2.9vh;
+    height: 2.6vh;
+    text-align: center;
+    border-radius: 0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    line-height: 2.6vh;
+    margin-top: 0.5vh;
+    font-size: 1.8vh;
+    color: white;
+}
+.fotoperfil-icone{
+    position: relative;
+    background-color: #8F8E93;
+    width: 2.9vh;
+    height: 2.6vh;
+    text-align: center;
+    border-radius: 0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    line-height: 2.6vh;
+    margin-top: 0.5vh;
+    font-size: 1.4vh;
+    color: white;
+}
+
+
+/* IOS SWITCH */
+
+
+.form-switch {
+    position: absolute;
+    bottom: 0;
+    left: 14vh;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .form-switch i {
+    position: relative;
+    display: inline-block;
+    margin-right: .5rem;
+    width: 46px;
+    height: 26px;
+    background-color: #e6e6e6;
+    border-radius: 23px;
+    vertical-align: text-bottom;
+    transition: all 0.3s linear;
+  }
+  
+  .form-switch i::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 42px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 11px;
+    transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+    transition: all 0.25s linear;
+  }
+  
+  .form-switch i::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+    transform: translate3d(2px, 2px, 0);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-switch:active i::after {
+    width: 28px;
+    transform: translate3d(2px, 2px, 0);
+  }
+  
+  .form-switch:active input:checked + i::after { transform: translate3d(16px, 2px, 0); }
+  
+  .form-switch input { display: none; }
+  
+  .form-switch input:checked + i { background-color: #4BD763; }
+  
+  .form-switch input:checked + i::before { transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); }
+  
+  .form-switch input:checked + i::after { transform: translate3d(22px, 2px, 0); }

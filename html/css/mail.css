@@ -1,0 +1,718 @@
+.mail-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.mail-home {
+    position: relative;
+    left: 0;
+    background-color: white;
+}
+
+.mail-header {
+    display: block;
+    height: 14vh;
+    width: 100%;
+    background: #f2f2f2;
+}
+#inbox-pesquisar-input {
+    position: relative;
+    border: none;
+    background: #E4E4E6;
+    height: 3.5vh;
+    background-image: url(../img/search.png);
+    background-size: 2vh;
+    background-repeat: no-repeat;
+    background-position: 0.5vh;
+    border-radius: 1vh;
+    box-shadow: 0 0 0.2vh 0 rgba(0, 0, 0, 0.281);
+    font-family: 'Roboto';
+    outline: none;
+    top: 4.8vh;
+    width: 86%;
+    left: 1.8vh;
+    color: #8B8C8E !important;
+    text-indent: 3vh;
+    font-size: 1.3vh;
+}
+
+#inbox-pesquisar-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #8B8C8E !important;
+    opacity: 1; /* Firefox */
+  }
+
+  #inbox-pesquisar-input:focus{
+      border-bottom: 0 !important;
+      box-shadow: none !important;
+  }
+
+.inbox-app-header {
+    position: relative;
+    height: 14vh;
+    left: 0vh;
+    top: -1vh;
+    border: 1px solid #BABABC;
+    background-color: #F7F7F7;
+}
+#mail-header-text {
+    position: absolute;
+    top: 5vh;
+    left: 4.5vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.5vh;
+    color: black;
+}
+
+#mail-header-mail {
+    position: absolute;
+    top: 7vh;
+    left: 4.5vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.3vh;
+    color: gray;
+}
+
+#mail-header-lastsync {
+    position: relative;
+    bottom: 1.4vh;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.1vh;
+    color: #8f8f8f;
+}
+
+.mail-list {
+    position: absolute;
+    width: 99%;
+    background-color: rgb(255, 255, 255);
+    height: 37.7vh;
+    top: 0vh;
+    left: .1vh;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+}
+
+.mail-list::-webkit-scrollbar {
+    display: none;
+}
+
+.mail {
+    position: relative;
+    background: rgb(255, 255, 255) !important;
+    height: 7.5vh;
+    width: 100%;
+    transition: all 0.3s !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mail:hover {
+    background: #E5E5E5 !important;
+    transition: all 0.3s !important;
+}
+.mail:after{
+    content: '';
+    position: relative;
+    background-color: #d8d8d8;
+    display: block;
+    z-index: 15;
+    top: 7vh;
+    right: auto;
+    bottom: 0.01vh;
+    left: 0vh;
+    height: 0.1vh;
+    width: 100%;
+    transform-origin: 50% 100%;
+    transform: scaleY(calc(1 / var(--f7-device-pixel-ratio)));
+}
+
+.mail-sender {
+    position: absolute;
+    font-size: 1.6vh;
+    color: rgb(0 0 0);
+    left: 2vh;
+    top: 0vh;
+    font-weight: 700;
+    letter-spacing: -0.02vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mail-text {
+    position: absolute;
+    top: 2.7vh;
+    left: 2vh;
+    font-size: 1.15vh;
+    color: rgb(83, 83, 83);
+    max-width: 23vh;
+    width: 23vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.mail-text > p {
+    position: relative;
+    display: inline-block;
+    white-space: normal;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: -webkit-linear-gradient(#000, #c7c7c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-variant: unset;
+    height: 3vh;
+    max-height: 3vh;
+}
+
+.mail-time {
+    position: absolute;
+    font-size: 1.1vh;
+    color: rgb(80, 80, 80);
+    right: 3vh;
+    top: 0.5vh;
+}
+.email-seta-entrar{
+    position: absolute;
+    right: -2.4vh;
+    bottom: -0.6vh;
+    color: gray;
+}
+.mail-footer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 6.2vh;
+    background-color: white;
+    border-top: 1px solid #BABABC;
+    bottom: 0vh;
+    z-index: 1;
+}
+.mail-footer-leftbuttom{
+    color: #157BCF;
+    position: relative;
+    font-size: 2.8vh;
+    right: 2.4vh;
+    top: 0.9vh;
+}
+.mail-footer-center{
+    display: grid;
+    justify-content: center;
+    font-size: 1.45vh;
+    line-height: 3vh;
+    width: 12vh;
+}
+.mail-footer-rightbutton{
+    color: #157BCF;
+    position: relative;
+    font-size: 2.8vh;
+    left: 2.4vh;
+    top: 0.9vh;
+}
+
+.opened-mail {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+    top: 0;
+    left: -30vh;
+    z-index: 1;
+}
+.mail-subject-area{
+    display: grid;
+    position: relative;
+    width: 22vh;
+    left: 1.2vh;
+}
+.mail-de{
+    font-weight: 600;
+    font-size: 1.4vh;
+}
+.mail-de2{
+    font-weight: 600;
+    font-size: 1.4vh;
+    margin-top: 0.5vh;
+}
+.mail-pessoa{
+    position: absolute;
+    color: #3fa7fd;
+    top: 2.9vh;
+    left: 4vh;
+    text-decoration: underline;
+}
+.opened-mail-header {
+    display: block;
+    height: 7vh;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #BABABC;
+}
+
+.mail-back {
+    position: absolute;
+    top: 3.8vh;
+    left: 2vh;
+}
+.mail-arrow-up{
+    position: absolute !important;
+    top: 3.3vh;
+    right: 7vh;
+    font-size: 3vh;
+    color: #d3d3d3;
+}
+.mail-arrow-down{
+    position: absolute !important;
+    top: 3.3vh;
+    right: 3vh;
+    font-size: 3vh;
+    color: #157BCF;
+}
+.mail-back > i {
+    color: #157BCF;
+    font-size: 2vh;
+    transition: all 0.3s;
+}
+
+.mail-back:hover #mail-back {    
+    color: #66b5f6;
+    transition: all 0.3s;
+}
+
+.mail-subject {
+    font-size: 1.8vh;
+    color: #157BCF;
+    max-width: 22vh;
+    text-decoration: underline;
+}
+.mail-info-inbox{
+    position: absolute;
+    width: 25.5vh;
+    left: 0.8vh;
+    margin-top: 1vh;
+}
+.mail-destinatario{
+
+}
+.mail-firstletter-rounded{
+    position: absolute;
+    top: 0vh;
+    right: 1vh;
+    text-align: center;
+    line-height: 3vh;
+    width: 3vh;
+    height: 3vh;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    font-size: 1.5vh;
+}
+
+
+.mail-subject > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mail-date {
+    position: relative;
+    top: 9vh;
+    left: 2vh;
+    font-size: 1.1vh;
+    color: rgb(51, 51, 51);
+}
+
+.mail-spacing {
+    position: absolute;
+    width: 23vh;
+    background-color: rgba(54, 54, 54, 0.3);
+    height: .1vh;
+    top: 14.0vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 20vh;
+}
+
+.mail-content {
+    position: relative;
+    top: 8.3vh;
+    left: 2vh;
+    font-size: 1.3vh;
+    color: rgb(24, 24, 24);
+    max-width: 23vh;
+    overflow-y: scroll;
+    max-height: 36.8vh;
+}
+.mail-content::-webkit-scrollbar {
+    display: none;
+}
+.mail-content > p {
+    white-space: nowrap;
+    display:inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 100;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.opened-mail-footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 4vh;
+    background-color: #ffffff;
+    bottom: 0.5vh;
+    border-top: 1px solid #BABABC;
+}
+
+.opened-mail-footer-item {
+    position: relative;
+    width: 50%;
+    height: 4vh;
+    text-align: center;
+    line-height: 4.3vh;
+    color: black;
+    font-size: 1.8vh;
+    transition: .1s ease-in-out;
+    float: left;
+}
+.text-content-mail{
+
+}
+
+.mail-content:after{
+    content: '';
+    position: relative;
+    background-color: #a0a0a0;
+    display: block;
+    z-index: 15;
+    top: 0vh;
+    right: 0.1vh;
+    bottom: 0.01vh;
+    left: 0vh;
+    height: 0.100vh;
+    width: 100%;
+    transform-origin: 50% 100%;
+    transform: scaleY(calc(1 / var(--f7-device-pixel-ratio)));
+}
+
+.opened-mail-footer-item:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.opened-mail-footer-item:hover .mail-icon {
+    font-size: 1.9vh;
+    transition: .1s ease-in-out;
+    animation: Shake 1s infinite;
+}
+.mail-button-deletar{
+    margin-right: 15vh;
+    color: #6fbcfc;
+    top: 0.4vh;
+    font-size: 2.2vh;
+}
+.mail-button-lido{
+    color: #6fbcfc;
+    top: 0.4vh;
+    font-size: 2.2vh;
+}
+
+@keyframes Shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Advert App */
+
+.advert-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #F0EFF4;
+    overflow: hidden;
+}
+
+.advert-header {
+    position: absolute;
+    width: 100%;
+    height: 7vh;
+    background-color: white;
+    top: 0;
+}
+.avatar-advert{
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    bottom: 0.4vh;
+    line-height: 4vh;
+    text-align: center;
+    color: white;
+    left: 0.2vh;
+    background-color: lightgrey;
+    border-radius: 50%;
+    z-index: 1;
+    background-size: cover;
+}
+.advert-header:after{
+    content: '';
+    position: absolute;
+    background-color: #c4c4c4;
+    display: block;
+    z-index: 15;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0vh;
+    height: 0.1vh;
+    width: 100%;
+    transform-origin: 50% 100%;
+    transform: scaleY(calc(1 / var(--f7-device-pixel-ratio)));
+}
+
+#advert-header-text {
+    position: absolute;
+    top: 3.5vh;
+    left: 2vh;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.8vh;
+    color: black;
+}
+.advert-nonvo-anuncio{
+    position: absolute !important;
+    top: 3.5vh;
+    right: 2vh;
+    font-size: 2.7vh;
+    color: #157BCF;
+}
+
+#advert-header-name {
+    position: absolute;
+    top: 8vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.4vh;
+    color: rgba(26, 26, 26, 0.842);
+}
+
+.advert-list {
+    position: absolute;
+    width: 99%;
+    background-color: #F0EFF4;
+    height: 47.9vh;
+    top: 7vh;
+    left: .1vh;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+.advert-list::-webkit-scrollbar {
+    display: none;
+}
+.advert {
+    position: relative !important;
+    background-color: #157BCF;
+    height: auto;
+    min-height: 4vh;
+    display: block !important;
+    width: 77%;
+    transition: all 0.2s;
+    margin: 0 auto;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    border-radius: 0.5vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+.advert > p {
+    margin-top: 0vh;
+    color: rgb(255, 255, 255);
+    max-width: 25vh;
+}
+
+.advert:hover {
+    background-color: #2a96ee;
+    transition: all 0.2s;
+}
+.phone-loading{
+    display: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 0vh;
+}
+.copiar-numero-celular{
+    position: absolute !important;
+    top: 0.5vh;
+    right: 1.2vh;
+    font-size: 1.5vh;
+    color: gray;
+    transition: all 0.3s;
+}
+.copiar-numero-celular:hover{
+    font-size: 1.7vh;
+    color: #2a96ee;
+    transition: all 0.3s;
+}
+
+.advert-sender {
+    position: relative;
+    font-size: 1.2vh;
+    width: 100%;
+    background-color: white;
+    height: 2.5vh;
+    border-radius: 0.3vh;
+    line-height: 2.5vh;
+    font-weight: 600;
+}
+.advert-tipo{
+    font-size: 2.2vh;
+}
+.button-copiar{
+    
+}
+
+.test-slet {
+    position: absolute;
+    width: 100%;
+    height: 4.2vh;
+    top: 52.6vh;
+    transition: .1s ease-in-out;
+    text-align: center;
+    line-height: 4.2vh;
+    font-size: 2.3vh;
+    background-color: rgb(234, 234, 234);
+}
+
+.test-slet:hover {
+    background-color: rgb(214, 214, 214);
+    transition: .1s ease-in-out;
+}
+
+.test-slet:hover .test-icon {
+    transition: .1s ease-in-out;
+    animation: Shake 1s infinite;
+}
+
+.new-advert {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: #f2f2f2;
+    overflow: hidden;
+    left: -30vh;
+}
+
+.new-advert-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(234, 234, 234);
+}
+
+.new-advert-footer-item {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    line-height: 5vh;
+    font-size: 2.2vh;
+    transition: .1s linear;
+    color: rgb(48, 48, 48);
+}
+
+.new-advert-footer-item:hover {
+    background-color: rgb(214, 214, 214);
+    transition: .1s linear;
+}
+
+.new-advert-footer-item:hover .new-advert-icon {
+    color: rgb(32, 32, 32);
+    animation: Shake 1s infinite;
+}
+
+.new-advert-header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+}
+
+#new-advert-header-text {
+    position: absolute;
+    top: 5vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: black;
+}
+
+.new-advert-textarea {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 15vh;
+    height: 30vh;
+    width: 80%;
+    outline: none;
+    border: none;
+    resize: none;
+    /* border-radius: 1.5vh 1.5vh 1.5vh 1.5vh; */
+    box-shadow: 0px 0 1px .5px rgba(0, 0, 0, 0.233);
+    padding: 1.5vh;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: 0.5vh solid #000;
+    transition: .1s linear;
+}
+
+.new-advert-textarea:focus {
+    border-bottom: 0.5vh solid #ff8f1a;
+}
+
+.new-advert-textarea:valid {
+    border-bottom: 0.5vh solid #29b417;
+}
+
+.advert-home {
+    position: relative;
+    left: 0;
+}
+
+.nomails {
+    text-align: center;
+    color: black;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.5vh;
+    line-height: 20vh;
+}
