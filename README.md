@@ -1,5 +1,7 @@
 # reborn_phone
  Qbcore modified phone - deprecated dev version 2020.
+ 
+This script is not ready or suitable for use, as it is a version with several problems.
 
 ![alt text](https://i.imgur.com/RBxSjgl.png)
 ![alt text](https://i.imgur.com/xUfiVbT.png)
@@ -12,4 +14,4 @@
 ![alt text](https://i.imgur.com/JpKIFUJ.png)
 ![alt text](https://i.imgur.com/o2RbM4d.png)
 ![alt text](https://i.imgur.com/k9X7pHI.png)
-![alt text](https://i.imgur.com/c5c4Ic4.png)
+![alt text](https://i.imgur.com/c5c4Ic4.png
