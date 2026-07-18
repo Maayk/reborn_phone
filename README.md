@@ -14,4 +14,4 @@ This script is not ready or suitable for use, as it is a version with several pr
 ![alt text](https://i.imgur.com/JpKIFUJ.png)
 ![alt text](https://i.imgur.com/o2RbM4d.png)
 ![alt text](https://i.imgur.com/k9X7pHI.png)
-![alt text](https://i.imgur.com/c5c4Ic4.png
+![alt text](https://i.imgur.com/c5c4Ic4.png)
